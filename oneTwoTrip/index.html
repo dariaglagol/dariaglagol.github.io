@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+<script src="./form.js"></script>
+<script>
+  var props = {
+    verticals: { avia: true, hotels: true, railways: true },
+    styles: { mainBackground: '#008000', buttonBackground: '#0099E0',  buttonColor: 'blue', mainColor: 'orange'},
+    data: {
+      avia: {
+        from: 'OVB'
+      }
+    },
+    isFullWidth: true,
+    withBorder: true,
+    ottlogo: true,
+    type: 'form',
+    // width: '600px',
+    widgetId: '1883',
+    activeTab: 'avia'
+  };
+
+  new JSWidget({ props: props, target: document.body });
+</script>
+
+<!--<script charset="utf-8" src="//partner.onetwotrip.com/build/widget/form.widget.load.js?id=1883&v=2" data-avia="true" avia-from="MOW" data-hotels="true" data-railways="true" jd-from="22871"  async></script>-->
+
+<!--<script charset="utf-8" src="//www.travelpayouts.com/widgets/7e5b09816b07390faba962d05e59a478.js?v=1594" async></script>-->
+
+</body>
+</html>
