@@ -4,36 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title></title>
-</head>
+<script type="text/javascript" src="../sapsan/index.js"></script></head>
 <body>
-<script src="./form.js"></script>
 <script>
   var props = {
-    verticals: { avia: true, railways: true, hotels: true },
-    styles: {
-      mainBackground: '#009add',
-      buttonBackground: '#ffd735',
-      buttonColor: '#000000',
-      mainColor: '#ffffff'
+    colors: {
+      mainBackground: '#fff',
+      buttonBackground: '#e74c3c',
+      buttonColor: '#fff',
+      mainColor: '#000',
+      logoColor: '#e74c3c'
     },
     data: {
-      avia: {
-        from: 'OVB'
-      },
-      railways: {
-        from: 'Новосибирск'
-      },
-      hotels: {
-        place: 'Прага'
-      }
+      from: 'Москва',
+      to: 'Санкт-Петербург'
     },
     isFullWidth: true,
     withBorder: false,
     ottlogo: true,
     type: 'form',
     // width: '600px',
-    widgetId: '1883',
-    activeTab: 'avia'
+    widgetId: '1883'
   };
 
   new JSWidget({ props: props, target: document.body });
