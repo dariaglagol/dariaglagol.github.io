@@ -51,7 +51,7 @@
 }
 
 .ottwl-header .logo-block {
-    //margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .ottwl-header__block .logo .logo-image {
@@ -82,7 +82,7 @@
 }
 
 @media(min-width: 992px) {
-    .container .ng-isolate-scope {
+    .container > .ng-isolate-scope {
         padding: 0 85px;
     }
 
