@@ -98,7 +98,7 @@
     position: relative;
 }
 .ottwl-header__block--mobile .ottwl-header__auth-dialog-btn::before {
-    content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><defs><linearGradient id='a' x1='50%' x2='50%' y1='0%' y2='100%'><stop offset='0%' stop-color='#FFF'/><stop offset='100%' stop-color='#EEE'/></linearGradient><path id='b' d='M11.586 11L9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 1 1-1.414-1.414L11.586 13H4a1 1 0 0 1 0-2h7.586zM10 5a1 1 0 1 1 0-2h8a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3h-8a1 1 0 0 1 0-2h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-8z'/></defs><g fill='none' fill-rule='evenodd'><path fill='url(#a)' d='M0 0h320v568H0z' transform='translate(-280 -80)'/><use fill='#000' fill-rule='nonzero' xlink:href='#b'/></g></svg> ");
+    content: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><defs><linearGradient id='a' x1='50%' x2='50%' y1='0%' y2='100%'><stop offset='0%' stop-color='%FFF'/><stop offset='100%' stop-color='%EEE'/></linearGradient><path id='b' d='M11.586 11L9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 1 1-1.414-1.414L11.586 13H4a1 1 0 0 1 0-2h7.586zM10 5a1 1 0 1 1 0-2h8a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3h-8a1 1 0 0 1 0-2h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-8z'/></defs><g fill='none' fill-rule='evenodd'><path fill='url(%a)' d='M0 0h320v568H0z' transform='translate(-280 -80)'/><use fill='%000' fill-rule='nonzero' xlink:href='%b'/></g></svg>  ");
     display: block;
     width: 24px;
     height: 24px;
