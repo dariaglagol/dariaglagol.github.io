@@ -25,4 +25,7 @@
 
 .forms-tabs li a {
     font-family: 'MuseoSansCyrl', Arial, sans-serif;
+    font-size: 15px;
+    line-height: normal;
+    font-weight: 500;
 }
