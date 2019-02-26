@@ -35,7 +35,7 @@
     border-bottom: none;
 }
 
-.forms-tabs li a::before {
+.forms-tabs .active a::before {
     content: "";
     position: absolute;
     left: 50%;
