@@ -46,6 +46,9 @@
     background-color: #ff8c00;
 }
 
+.container .ng-isolate-scope {
+    padding: 0 16px;
+}
 
 .ottwl-header__block .logo .logo-image {
     margin: 0;
@@ -57,10 +60,6 @@
 
 #ottSaaS {
     background: #eeeeee;
-}
-
-.container .ng-isolate-scope:not(.mobile-menu-open){
-    padding: 0 85px;
 }
 
 .ottwl-header {
@@ -80,4 +79,10 @@
     padding: 12px 24px;
     border: solid 1px rgba(0, 0, 0, 0.14);
     border-radius: 100px;
+}
+
+@media(min-width: 992px) {
+    .container .ng-isolate-scope {
+        padding: 0 85px;
+    }
 }
