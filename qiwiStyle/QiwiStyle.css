@@ -50,3 +50,20 @@
 #ottSaaS {
     background: #eeeeee;
 }
+
+.container {
+    padding: 0 74px;
+}
+
+.ottwl-header {
+    padding-top: 24px;
+    justify-content: flex-end;
+}
+
+.desktop-nav.ottheader__block {
+    padding-left: 22px;
+}
+
+.ottwl-header__block.ng-scope {
+    margin-left: auto;
+}
