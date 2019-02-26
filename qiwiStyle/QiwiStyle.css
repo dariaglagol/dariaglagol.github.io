@@ -52,7 +52,7 @@
 }
 
 .container {
-    padding: 0 74px;
+    padding: 0 85px;
 }
 
 .ottwl-header {
@@ -60,7 +60,7 @@
     justify-content: flex-end;
 }
 
-.desktop-nav.ottheader__block {
+.desktop-nav.ottwl-header__block {
     padding-left: 22px;
 }
 
