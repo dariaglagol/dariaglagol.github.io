@@ -59,13 +59,13 @@
     background: #eeeeee;
 }
 
-.container {
+.container .ng-isolate-scope:not(.mobile-menu-open){
     padding: 0 85px;
 }
 
 .ottwl-header {
     padding-top: 20px;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .desktop-nav.ottwl-header__block {
