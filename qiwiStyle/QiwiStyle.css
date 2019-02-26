@@ -50,6 +50,10 @@
     padding: 0 16px;
 }
 
+.ottwl-header .logo-block {
+    margin: 0 auto;
+}
+
 .ottwl-header__block .logo .logo-image {
     margin: 0;
 }
