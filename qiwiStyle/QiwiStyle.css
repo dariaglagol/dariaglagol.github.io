@@ -33,14 +33,7 @@
 }
 
 .ottwl-header__block .logo .logo-image {
-    display: none;
-}
-
-.ottwl-header__block .logo {
-    width: 92px;
-    height: 37px;
-    display: block;
-    background: url("./logo-qiiwi.svg") no-repeat center;
+    margin: 0;
 }
 
 #ottSaasHeader {
