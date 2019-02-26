@@ -30,6 +30,8 @@
     line-height: normal;
     font-weight: 500;
     color: #000000;
+    letter-spacing: normal;
+    border-bottom: none;
 }
 
 .ottwl-header__block .logo .logo-image {
