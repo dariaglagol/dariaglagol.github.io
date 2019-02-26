@@ -24,6 +24,7 @@
 }
 
 .forms-tabs li a {
+    position: relative;
     font-family: 'MuseoSansCyrl', Arial, sans-serif;
     /* font-size: 16px; */
     font-size: 14px;
@@ -33,6 +34,17 @@
     letter-spacing: normal;
     border-bottom: none;
 }
+
+.forms-tabs li a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 27px;
+    width: 100%;
+    height: 2px;
+    background-color: #ff8c00;
+}
+
 
 .ottwl-header__block .logo .logo-image {
     margin: 0;
@@ -51,7 +63,7 @@
 }
 
 .ottwl-header {
-    padding-top: 24px;
+    padding-top: 20px;
     justify-content: flex-end;
 }
 
