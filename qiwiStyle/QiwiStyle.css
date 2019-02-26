@@ -46,6 +46,10 @@
     background-color: #ff8c00;
 }
 
+.container {
+    padding: 0 16px;
+}
+
 .ottwl-header__block .logo .logo-image {
     margin: 0;
 }
@@ -67,10 +71,6 @@
     padding-left: 22px;
 }
 
-.ottwl-header__block.ng-scope {
-    margin-left: auto;
-}
-
 .ottwl-header__auth-dialog-btn {
     padding: 12px 24px;
     border: solid 1px rgba(0, 0, 0, 0.14);
@@ -80,5 +80,9 @@
 @media(min-width: 992px) {
     .container .ng-isolate-scope {
         padding: 0 85px;
+    }
+
+    .ottwl-header__block.ng-scope {
+        margin-left: auto;
     }
 }
