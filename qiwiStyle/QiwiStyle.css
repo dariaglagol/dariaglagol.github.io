@@ -82,8 +82,10 @@
 }
 
 .ottwl-header__auth-dialog-btn:active,
+.ottwl-header__auth-dialog-btn:focus,
 .ottwl-header__auth-dialog-btn:hover {
     border-color: #CCC !important;
+    transition: 0.2s;
 }
 
 .ottwl-header__block--mobile svg {
@@ -158,6 +160,7 @@ input.form-control:focus {
     background: #FF8200 !important;
     border-color: #FF8200 !important;
     box-shadow: 0 12px 18px 0 rgba(255, 140, 0, 0.4);
+    transition: 0.2s;
 }
 
 .text-right a {
