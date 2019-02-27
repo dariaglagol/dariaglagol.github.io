@@ -128,6 +128,7 @@ input.form-control {
 
 input.form-control:focus {
     border-color: #FF8C00 !important;
+    transition: 0.2ms;
 }
 
 .text-left .btn {
