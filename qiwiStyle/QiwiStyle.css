@@ -95,7 +95,7 @@
     width: 24px;
     height: 24px;
 }
-.nav-tabs>li>a,
+.ngdialog.auth-popup .nav-tabs>li>a,
 .ngdialog.auth-popup .nav-tabs>li.active>a {
     font-size: 13px;
     letter-spacing: 1.5px;
