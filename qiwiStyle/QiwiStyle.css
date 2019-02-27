@@ -81,6 +81,10 @@
     border-radius: 100px;
 }
 
+.ottwl-header__auth-dialog-btn:hover {
+    border-color: #CCC;
+}
+
 .ottwl-header__block--mobile svg {
     display: none;
 }
@@ -142,7 +146,7 @@ input.form-control:focus {
 
 .text-left .btn:hover {
     background: #FF8200 !important;
-    border: none !important;
+    border-color: #FF8200 !important;
 }
 
 .text-right a {
