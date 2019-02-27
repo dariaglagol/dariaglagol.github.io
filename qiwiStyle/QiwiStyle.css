@@ -77,7 +77,7 @@
 
 .ottwl-header__auth-dialog-btn {
     padding: 12px 24px;
-    border: solid 1px #e6e6e6;
+    border: solid 1px #e6e6e6 !important;
     border-radius: 100px;
 }
 
