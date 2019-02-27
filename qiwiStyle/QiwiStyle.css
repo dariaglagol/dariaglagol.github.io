@@ -119,8 +119,8 @@
 
 .form-group > label::before {
     content: "Номер бонусного счета";
+    position: absolute;
 }
-
 
 /*.form-group > input:focus*/
 
@@ -128,6 +128,7 @@ input.form-control {
     border: none;
     border-bottom: 1px solid #CCC;
     box-shadow: none;
+    border-radius: 0;
 }
 
 
