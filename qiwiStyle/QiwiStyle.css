@@ -107,14 +107,20 @@
 }
 .ngdialog.ngdialog-theme-default .ngdialog-content { border-radius: 10px; }
 
-.form-group .ng-scope {
+.form-group.ng-scope {
     position: relative;
 }
 
-.form-group .ng-scope label {
-    position: absolute;
-
+.form-group > label {
+    display: none;
 }
+
+.form-group > label::before {
+    content: "Номер бонусного счета";
+}
+
+
+/*.form-group > input:focus*/
 
 input.form-control {
     border: none;
