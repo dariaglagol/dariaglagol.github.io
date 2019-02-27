@@ -102,10 +102,16 @@
     text-transform: uppercase;
 }
 
+.ngdialog.ngdialog-theme-default .ngdialog-close {
+    top: 15px;
+    right: 15px;
+}
+
 .ngdialog.ngdialog-theme-default .ngdialog-close::before {
     content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 10.586l6.293-6.293a1 1 0 0 1 1.414 1.414L13.414 12l6.293 6.293a1 1 0 0 1-1.414 1.414L12 13.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L10.586 12 4.293 5.707a1 1 0 0 1 1.414-1.414L12 10.586z'></path></svg>");
     width: 24px;
     height: 24px;
+    padding: 0;
 }
 .ngdialog.ngdialog-theme-default .ngdialog-content { border-radius: 10px; }
 
