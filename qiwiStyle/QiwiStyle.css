@@ -119,9 +119,9 @@
     position: relative;
 }
 
-.form-group > label {
-    display: none;
-}
+/*.form-group > label {*/
+    /*display: none;*/
+/*}*/
 
 .form-group > label::before {
     content: "Номер бонусного счета";
