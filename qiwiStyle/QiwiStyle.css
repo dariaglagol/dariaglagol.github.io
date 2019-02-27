@@ -128,16 +128,17 @@ input.form-control {
 
 input.form-control:focus {
     border-color: #FF8C00 !important;
-    transition: 0.2ms;
 }
 
 .text-left .btn {
     display: block;
     margin: 0 auto;
     border-radius: 100px;
+    background: #FF8C00;
 }
 
 .text-left .btn:hover {
+    background: #FF8200;
     box-shadow: 0 12px 16px 0 rgba(255, 140, 0, 20);
 }
 
