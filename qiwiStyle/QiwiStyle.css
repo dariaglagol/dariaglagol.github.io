@@ -137,7 +137,7 @@ input.form-control:focus {
 }
 
 .text-left .btn:hover {
-    box-shadow: 0, 12px, 16px 0, rgba (255, 140, 0, 20);
+    box-shadow: 0 12px 16px 0 rgba(255, 140, 0, 20);
 }
 
 .text-right a {
