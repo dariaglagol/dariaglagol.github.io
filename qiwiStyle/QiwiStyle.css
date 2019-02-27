@@ -96,6 +96,11 @@
     height: 24px;
 }
 
+.ngdialog.auth-popup .nav-tabs>li.active>a {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
 
 @media(min-width: 992px) {
     .container > .ng-isolate-scope {
