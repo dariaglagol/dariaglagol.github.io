@@ -125,6 +125,7 @@
 input.form-control {
     border: none;
     border-bottom: 1px solid #CCC;
+    box-shadow: none;
 }
 
 
