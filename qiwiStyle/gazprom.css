@@ -1,0 +1,9 @@
+.forms-tabs li a {
+    position: relative;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: normal;
+    border-bottom: 4px solid #1551b8;
+}
