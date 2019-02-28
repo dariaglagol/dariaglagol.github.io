@@ -1,6 +1,9 @@
 .forms-tabs li:hover a,
 .forms-tabs li:focus a,
-.forms-tabs li:active a {
+.forms-tabs li:active a,
+.forms-tabs li:hover a:hover,
+.forms-tabs li:focus a:hover,
+.forms-tabs li:active a:hover {
     color: #1551b8 !important;
 }
 
