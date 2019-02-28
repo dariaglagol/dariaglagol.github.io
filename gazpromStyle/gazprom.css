@@ -3,3 +3,9 @@
 .forms-tabs li a:active {
     color: #1551b8;
 }
+
+.lk-head-btn:hover,
+.lk-head-btn:focus,
+.lk-head-btn:active {
+    border-color: #1551b8 !important;
+}
