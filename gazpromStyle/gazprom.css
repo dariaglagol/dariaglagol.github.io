@@ -1,3 +1,5 @@
-.forms-tabs li.active a {
-    border-bottom: 4px solid #1551b8;
+.forms-tabs li a:hover,
+.forms-tabs li a:focus,
+.forms-tabs li a:active {
+    color: #1551b8;
 }
