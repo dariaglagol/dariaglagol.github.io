@@ -1,11 +1,16 @@
 .content-wrap .nav-bar-table td:nth-child(2) a {
-    visibility: hidden;
+    font-size: 0;
 }
 
 .content-wrap .nav-bar-table td:nth-child(2) a::before {
     content: 'Мили';
+    color: #494949;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 20px 0;
+    background-color: #fff;
 }
 
 .bonuses th:nth-child(2) {
-    visibility: hidden;
+    font-size: 0;
 }
