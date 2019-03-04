@@ -18,4 +18,10 @@
 
 .bonuses th:nth-child(2)::before {
     content: 'Мили';
+    font-size: 14px;
+}
+
+.bonuses > h4,
+.bonuses > p:nth-child(7){
+    font-size: 0;
 }
