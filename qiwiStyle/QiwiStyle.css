@@ -171,6 +171,7 @@ input.form-control:focus {
 
 .ottSaasFooter {
     font-family: 'MuseoSansCyrl', Arial, sans-serif;
+    padding-bottom: 30px;
 }
 
 @media(min-width: 992px) {
