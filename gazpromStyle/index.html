@@ -1,31 +1,20 @@
 <style>
     .rsb-footer__content {
-        padding: 40px 157px 32px;
+        padding: 30px 25px 32px;
         background-image: linear-gradient(to bottom, #1554b8, #0070c3);
         color: #000;
     }
 
     .rsb-footer__container-inner {
         display: flex;
+        flex-wrap: wrap;
         align-items: stretch;
         justify-content: space-between;
     }
 
-    .bank-info-block,
-    .ott-info-block,
-    .rsb-footer__logo-block {
-        flex: 33% 1 0 ;
-    }
+    .rsb-footer__container-inner { font-family: Roboto, Arial, sans-serif; }
 
-    .bank-info-block,
-    .ott-info-block,
-    .rsb-footer__warning p {
-        font-family: Roboto, Arial, sans-serif;
-    }
-
-    .bank-info-block {
-        padding-left: 11px;
-    }
+    .bank-info-block { padding-left: 11px; }
 
     .bank-info-block h4 {
         margin: 16px 0;
@@ -52,10 +41,6 @@
         color: #ffffff;
     }
 
-    .ott-info-block {
-        padding-left: 105px;
-    }
-
     .ott-info-block p {
         width: 235px;
         margin-top: 20px;
@@ -77,30 +62,144 @@
         color: #ffffff;
     }
 
-    .rsb-footer__container-inner--loyal {
-        width: 700px;
-        margin-left: auto;
-        margin-bottom: -20px;
-        padding-top: 45px;
-    }
-
-    .rsb-footer__container-inner--loyal p {
-        color: #ffffff;
-    }
-
-    .rsb-footer__container-inner--loyal p:not(:last-child){
-        margin-right: 70px;
-    }
-
-    .rsb-footer__container-inner--loyal p:last-child{
-        margin-left: auto;
-        width: 100px;
-    }
-
-    .rsb-footer__warning p{
+    .rsb-footer__warning p {
         font-size: 16px;
         text-align: center;
         color: #262c40;
+    }
+
+    .rsb-footer__container-inner {
+        justify-content: center;
+    }
+
+    .rsb-footer__container-inner--loyal {
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .rsb-footer__container-inner--loyal p {
+        flex: 100% 1 1;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .bank-info-block,
+    .ott-info-block,
+    .rsb-footer__logo-block {
+        flex: 100% 1 1;
+    }
+
+    .rsb-footer__logo-block,
+    .rsb-footer__user-info-block {
+        text-align: center;
+    }
+
+    .rsb-footer__user-info-block p {
+        margin: 20px auto 10px;
+    }
+
+    .rsb-footer__container-inner--loyal {
+        width: auto;
+    }
+
+    @media(min-width: 768px) {
+        .bank-info-block,
+        .ott-info-block,
+        .rsb-footer__logo-block {
+            flex: 33% 0 0 ;
+        }
+
+        .rsb-footer__container-inner {
+            justify-content: space-between;
+        }
+
+        .rsb-footer__container-inner--loyal p {
+            flex: 50% 1 1;
+            margin-right: 0;
+        }
+
+        .rsb-footer__user-info-block p {
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .rsb-footer__logo-block,
+        .rsb-footer__user-info-block{
+            text-align: left;
+        }
+
+        .rsb-footer__content {
+            padding: 30px 25px 32px;
+        }
+
+        .rsb-footer__logo-block svg {
+            width: 150px;
+        }
+
+        .rsb-footer__container-inner--loyal {
+            max-width: 700px;
+            margin: 0 auto;
+            margin-bottom: -20px;
+            padding-top: 45px;
+        }
+    }
+
+    @media(min-width: 1024px) {
+        .rsb-footer__logo-block svg {
+            width: auto;
+        }
+
+        .rsb-footer__container-inner--loyal {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .rsb-footer__container-inner {
+            flex-wrap: wrap;
+        }
+
+        .rsb-footer__content {
+            padding: 40px 50px 32px;
+        }
+
+        .ott-info-block {
+            padding: 0;
+        }
+
+        .rsb-footer__container-inner--loyal {
+            flex-wrap: nowrap;
+        }
+
+        .bank-info-block {
+            padding-left: 0;
+        }
+
+        .rsb-footer__container-inner--loyal p {
+            text-align: left;
+        }
+
+        .rsb-footer__container-inner--loyal p:not(:last-child) {
+            margin-right: 50px;
+        }
+
+        .rsb-footer__container-inner--loyal p:last-child {
+            margin-left: auto;
+            width: 115px;
+        }
+    }
+
+    @media(min-width: 1440px) {
+        .rsb-footer__container-inner {
+            flex-wrap: nowrap;
+        }
+
+        .rsb-footer__content {
+            padding: 40px 157px 32px;;
+        }
+
+        .ott-info-block {
+            padding-left: 105px;
+        }
     }
 </style>
 <footer class="rsb-footer">

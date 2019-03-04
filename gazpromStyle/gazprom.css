@@ -1,14 +1,3 @@
-/*.forms-tabs li:hover a,*/
-/*.forms-tabs li:focus a,*/
-/*.forms-tabs li:active a,*/
-/*.forms-tabs li:hover a:hover,*/
-/*.forms-tabs li:focus a:hover,*/
-/*.forms-tabs li:active a:hover {*/
-    /*color: #1551b8 !important;*/
-/*}*/
-
-/*.lk-head-btn:hover,*/
-/*.lk-head-btn:focus,*/
-/*.lk-head-btn:active {*/
-    /*border-color: #1551b8 !important;*/
-/*}*/
+.content-wrap .nav-bar-table td:nth-child(2) a {
+    visibility: hidden;
+}
