@@ -35,3 +35,12 @@
     content: 'Приветственные мили после первой покупки по карте.';
     font-size: 14px;
 }
+
+.balance-in-head .balance-txt-postfix{
+    font-size: 0;
+}
+
+.balance-txt-postfix::before {
+    content: 'миль';
+    font-size: 11px;
+}
