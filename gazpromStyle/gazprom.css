@@ -21,7 +21,17 @@
     font-size: 14px;
 }
 
-.bonuses > h4,
+.bonuses > h3:nth-child(6),
 .bonuses > p:nth-child(7){
     font-size: 0;
+}
+
+.bonuses h3:nth-child(6)::before {
+    content: 'Когда начисляются мили?';
+    font-size: 24px;
+}
+
+.bonuses > p:nth-child(7)::before {
+    content: 'Приветственные мили после первой покупки по карте.';
+    font-size: 14px;
 }
