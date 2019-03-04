@@ -169,6 +169,10 @@ input.form-control:focus {
     font-size: 13px;
 }
 
+.ottSaasFooter {
+    font-family: 'MuseoSansCyrl', Arial, sans-serif;
+}
+
 @media(min-width: 992px) {
     .container > .ng-isolate-scope {
         padding: 0 70px;
