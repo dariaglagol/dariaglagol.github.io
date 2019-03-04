@@ -9,8 +9,13 @@
     font-weight: 900;
     padding: 20px 0;
     background-color: #fff;
+    text-transform: uppercase;
 }
 
 .bonuses th:nth-child(2) {
     font-size: 0;
+}
+
+.bonuses th:nth-child(2)::before {
+    content: 'Мили';
 }
