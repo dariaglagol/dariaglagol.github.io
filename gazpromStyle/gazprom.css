@@ -5,3 +5,7 @@
 .content-wrap .nav-bar-table td:nth-child(2) a::before {
     content: 'Мили';
 }
+
+.bonuses th:nth-child(2) {
+    visibility: hidden;
+}
