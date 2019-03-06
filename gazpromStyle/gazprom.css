@@ -1,5 +1,5 @@
 .content-wrap .nav-bar-table td:nth-child(2) a {
-    font-size: 0;
+    font-size: 0 !important;
 }
 
 .content-wrap .nav-bar-table td:nth-child(2) a::before {
