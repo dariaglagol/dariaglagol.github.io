@@ -5,6 +5,9 @@
 .forms-tabs li:nth-of-type(3) a::after {
     content: 'Ж/д билеты';
     font-size: 14px;
+    line-height: 17px;
+    vertical-align: middle;
+    letter-spacing: 1px;
 }
 
 .mobile-menu .dropdown-menu li:nth-of-type(3) a {
