@@ -40,6 +40,7 @@
 
 .forms-tabs li:nth-of-type(3) a::before {
     content: 'Ж/д билеты';
+    font-size: 16px;
 }
 
 .forms-tabs .active a::before {
