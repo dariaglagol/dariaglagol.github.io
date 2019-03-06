@@ -87,6 +87,7 @@
     padding: 12px 24px;
     border: solid 1px #d8d8d8 !important;
     border-radius: 100px;
+    font-weight: 500;
     transition: 0.2s;
 }
 
