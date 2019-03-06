@@ -4,12 +4,24 @@
     font-weight: 300;
     font-style: normal;
 }
+/*@font-face {*/
+    /*font-family: 'MuseoSansCyrl';*/
+    /*src: url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSansCyrl_500.woff2') format('woff2'), url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSansCyrl_500.woff') format('woff');*/
+    /*font-weight: 500;*/
+    /*font-style: normal;*/
+/*}*/
 @font-face {
     font-family: 'MuseoSansCyrl';
-    src: url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSansCyrl_500.woff2') format('woff2'), url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSansCyrl_500.woff') format('woff');
+    src: url('./MuseoSans_500_normal.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
+/*@font-face {*/
+    /*font-family: 'MuseoSansCyrl';*/
+    /*src: url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSansCyrl_500.woff2') format('woff2'), url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSansCyrl_500.woff') format('woff');*/
+    /*font-weight: 500;*/
+    /*font-style: normal;*/
+/*}*/
 @font-face {
     font-family: 'MuseoSansCyrl';
     src: url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSansCyrl_700.woff2') format('woff2'), url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSansCyrl_700.woff') format('woff');
