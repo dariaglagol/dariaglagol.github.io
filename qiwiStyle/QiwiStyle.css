@@ -68,6 +68,7 @@
 
 .container {
     padding: 0 16px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .ottwl-header .logo-block {
@@ -102,6 +103,7 @@
     border-radius: 100px;
     font-weight: 500;
     transition: 0.2s;
+    letter-spacing: normal;
 }
 
 .hidden-xs .ottwl-header__auth-dialog-btn:active,
