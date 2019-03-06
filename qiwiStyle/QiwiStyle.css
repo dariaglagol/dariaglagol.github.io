@@ -85,7 +85,7 @@
 
 .hidden-xs .ottwl-header__auth-dialog-btn {
     padding: 12px 24px;
-    font-family: inherit;
+    font-family: 'MuseoSansCyrl', Arial, sans-serif;
     border: solid 1px #d8d8d8 !important;
     border-radius: 100px;
     font-weight: 500;
