@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <style>
+            .load__move-1-circ {
+                width: 210px;
+                height: 210px;
+                stroke-dasharray: 1880;
+                stroke-dashoffset: 1880;
+                -webkit-animation: progress 4s infinite alternate;
+                -o-animation: progress 4s infinite alternate;
+                animation: progress 4s infinite alternate;
+                -webkit-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+                color: #FB722A;
+            }
+        @keyframes progress {
+            from {
+                stroke-dashoffset: 1880;
+            }
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        </style>
+        <svg class="load__move-1-circ" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 602 602">
+            <path d="M13.5 301c0 159.9 128.7 289.5 287.5 289.5S588.5 460.9 588.5 301 459.8 11.5 301 11.5 13.5 141.1 13.5 301" fill="none" stroke-linejoin="round" stroke="currentColor" stroke-width="10"/>
+        </svg>
+    </body>
+</html>
