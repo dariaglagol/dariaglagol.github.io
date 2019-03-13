@@ -283,4 +283,6 @@ nav.mobile-menu-open .mobile-menu .dropdown-menu li > a:hover {
  * Custom header style
  */
 
-.ottwl-header .ottwl-header__block .ottwl-header__auth-dialog-btn { visibility: hidden; }
+.ottwl-header .ottwl-header__block .ottwl-header__auth-dialog-btn,
+.btn-logout,
+.btn-logout svg{ visibility: hidden; }
