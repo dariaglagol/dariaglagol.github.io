@@ -65,3 +65,8 @@
     content: 'миль';
     font-size: 11px;
 }
+
+.ottwl-header__block .logo-image {
+    width: 196px;
+    height: 40px;
+}
