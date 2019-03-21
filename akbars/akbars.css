@@ -286,3 +286,9 @@ nav.mobile-menu-open .mobile-menu .dropdown-menu li > a:hover {
 .ottwl-header .ottwl-header__block .ottwl-header__auth-dialog-btn,
 .btn-logout,
 .btn-logout svg{ visibility: hidden; }
+
+/*Hide password area start*/
+.basic-info__change-password-form {
+    display: none;
+}
+/*Hide password area end*/

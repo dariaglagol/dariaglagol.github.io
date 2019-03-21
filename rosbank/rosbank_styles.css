@@ -1,0 +1,91 @@
+/*
+html#ng-app {
+	height: 100%;
+}
+body.ottSaasBody {
+	position: relative;
+	min-height: 100% !important;
+	padding-bottom: 121px;
+}
+body.ottSaasBody .rosbank-footer {
+	position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+*/
+@media (max-width: 680px) {
+    /*
+    body.ottSaasBody {
+        padding-bottom: 159px;
+    }
+    */
+    body.ottSaasBody .rosbank-footer .rosbank-footer__wrapper {
+        padding-bottom: 0;
+    }
+}
+
+/* body[ng-app="ottWlProfile"] .mobile-menu .forms-tabs li:nth-child(2) a:before,
+body[ng-app="ottWlProfile"] nav-bar .nav-bar-table tr td:nth-child(2) a:before {
+	content: 'TRAVEL-'
+} */
+body[ng-app="ottWlProfile"] .mobile-menu .forms-tabs li:nth-child(2),
+body[ng-app="ottWlProfile"] nav-bar .nav-bar-table tr td:nth-child(2),
+body[ng-app="ottWlProfile"] .basic-info__contacts-form .block__email,
+body[ng-app="ottWlProfile"] .basic-info__change-password-form {
+    display: none;
+}
+
+body[ng-app="ottWlProfile"] .cards__info-text .cards__info-text--help-label:after {
+    /* content: ' Р РћРЎР‘РђРќРљРђ' */
+    content: '\0020\0420\041e\0421\0411\0410\041d\041a\0410'
+}
+
+body[ng-app="ottWlProfile"] .btn-primary {
+    background-color: #7f7f7f !important;
+    border-color: #7f7f7f !important;
+}
+
+#ottSaasHeader .ottwl-header__block .ottwl-header__auth-dialog-btn,
+#ottSaasHeader .ottwl-header__block .ottwl-header__logout-btn,
+#ottSaasHeader .ottwl-header__block .btn-logout {
+    display: none;
+}
+
+#ottSaasHeader .forms-tabs {
+    border-bottom: 1px solid #e1e3e6;
+}
+#ottSaasHeader .forms-tabs li {
+    margin: 0;
+    margin-right: 70px;
+    padding: 0;
+}
+#ottSaasHeader .forms-tabs li:last-child {
+    margin-right: 0;
+}
+#ottSaasHeader .forms-tabs li a {
+    color: #999;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -1px;
+    padding-bottom: 20px;
+    border-radius: 0;
+    border-bottom: 5px solid transparent;
+}
+#ottSaasHeader .forms-tabs li.active a,
+#ottSaasHeader .forms-tabs li.active:hover a,
+#ottSaasHeader .forms-tabs li.active:hover a:hover,
+#ottSaasHeader .forms-tabs li.active:focus a,
+#ottSaasHeader .forms-tabs li.active a:focus,
+#ottSaasHeader .forms-tabs li.active:focus a:focus {
+    color: #333 !important;
+    background: transparent;
+    border-bottom-color: #e60028;
+}
+
+/*Hide password area start*/
+.basic-info__change-password-form {
+    display: none;
+}
+/*Hide password area end*/

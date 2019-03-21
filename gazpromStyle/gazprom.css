@@ -74,3 +74,11 @@
 #ottSaasHeader {
     background: #ffffff;
 }
+
+.ottwl-header__logout-btn svg {
+    display: none;
+}
+
+.ottwl-header__logout-btn::before {
+    content: ;
+}
