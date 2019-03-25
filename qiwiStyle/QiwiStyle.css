@@ -1,26 +1,26 @@
 @font-face {
-    font-family: 'MuseoSansCyrl';
-    src: url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSans_300.woff2') format('woff2'),
-         url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSans_300.woff') format('woff');
+    font-family: 'MuseoSans';
+    src: url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSans_300.woff') format('woff'),
+         url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSans_300.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
-    font-family: 'MuseoSansCyrl';
+    font-family: 'MuseoSans';
     src: url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSans_500.woff2') format('woff2'),
          url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSans_500.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
-    font-family: 'MuseoSansCyrl';
+    font-family: 'MuseoSans';
     src: url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSans_700.woff2') format('woff2'),
          url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSans_700.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
-    font-family: 'MuseoSansCyrl';
+    font-family: 'MuseoSans';
     src: url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSans_900.woff2') format('woff2'),
          url('https://wl-qiwi--wl.onetwotrip.com/ott-static/images/partners/wl-qiwi/fonts/MuseoSans_900.woff') format('woff');
     font-weight: 900;
@@ -29,7 +29,7 @@
 
 .forms-tabs li a {
     position: relative;
-    font-family: 'MuseoSansCyrl', Arial, sans-serif;
+    font-family: 'MuseoSans', Arial, sans-serif;
     font-size: 16px;
     line-height: normal;
     font-weight: 500;
@@ -90,7 +90,7 @@
 
 .hidden-xs .ottwl-header__auth-dialog-btn {
     padding: 12px 24px;
-    font-family: 'MuseoSansCyrl', Arial, sans-serif;
+    font-family: 'MuseoSans', Arial, sans-serif;
     border: solid 1px #d8d8d8 !important;
     border-radius: 100px;
     font-weight: 500;
@@ -195,7 +195,7 @@ input.form-control:focus {
 }
 
 .ottSaasFooter {
-    font-family: 'MuseoSansCyrl', Arial, sans-serif;
+    font-family: 'MuseoSans', Arial, sans-serif;
     padding-bottom: 30px;
 }
 
