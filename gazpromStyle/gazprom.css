@@ -89,7 +89,7 @@
 [data-wl-page="index"] .forms-tabs li:hover a,
 [data-wl-page="index"] .forms-tabs li:focus a {
     opacity: 1;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 nav .ottwl-header__block .icons-btn.btn-lg {
@@ -107,12 +107,16 @@ nav .ottwl-header__block .icons-btn.btn-lg {
 
 [data-wl-page="index"] .lk-head-btn {
     color: #ffffff;
-    border-width: 0;
+    border-color: transparent;
 }
 
 [data-wl-page="index"] .lk-head-btn:hover,
 [data-wl-page="index"] .lk-head-btn:focus {
-    border-width: 1px;
+    border-color: #ffffff;
+}
+
+[data-wl-page="index"] .ottwl-header__logout-btn svg {
+    fill: #ffffff;
 }
 
 [data-wl-vertical='avia-serp'].ottSaasBody {
