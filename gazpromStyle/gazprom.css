@@ -85,8 +85,15 @@
 }
 
 [data-wl-page="index"] .forms-tabs li a:hover,
-[data-wl-page="index"] .forms-tabs li a:focus {
+[data-wl-page="index"] .forms-tabs li a:focus,
+[data-wl-page="index"] .forms-tabs li:hover a,
+[data-wl-page="index"] .forms-tabs li:focus a {
     opacity: 1;
+    color: #ffffff;
+}
+
+nav .ottwl-header__block .icons-btn.btn-lg {
+    padding: 0;
 }
 
 [data-wl-page="index"] .forms-tabs li.active a {
@@ -100,7 +107,12 @@
 
 [data-wl-page="index"] .lk-head-btn {
     color: #ffffff;
-    border: none;
+    border-width: 0;
+}
+
+[data-wl-page="index"] .lk-head-btn:hover,
+[data-wl-page="index"] .lk-head-btn:focus {
+    border-width: 1px;
 }
 
 [data-wl-vertical='avia-serp'].ottSaasBody {
