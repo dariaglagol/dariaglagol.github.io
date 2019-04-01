@@ -95,10 +95,6 @@
     border-bottom-color: #ffffff !important;
 }
 
-.btn-logout, .btn-logout svg {
-    vertical-align: baseline;
-}
-
 nav .ottwl-header__block .icons-btn.btn-lg {
     padding: 0;
 }
