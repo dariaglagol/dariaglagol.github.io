@@ -79,14 +79,20 @@
 }
 
 [data-wl-vertical='avia-serp'] .forms-tabs li.active a,
+[data-wl-vertical='avia-serp'] .forms-tabs li:hover a,
+[data-wl-vertical='avia-serp'] .forms-tabs li:focus a,
 [data-wl-vertical='avia-serp'] .forms-tabs li.active:hover a,
 [data-wl-vertical='avia-serp'] .forms-tabs li.active:hover a:hover,
 [data-wl-vertical='avia-serp'] .forms-tabs li.active:hover a:focus,
 [data-wl-vertical='hotels-serp'] .forms-tabs li.active a,
+[data-wl-vertical='hotels-serp'] .forms-tabs li:hover a,
+[data-wl-vertical='hotels-serp'] .forms-tabs li:focus a,
 [data-wl-vertical='hotels-serp'] .forms-tabs li.active:hover a,
 [data-wl-vertical='hotels-serp'] .forms-tabs li.active:hover a:hover,
 [data-wl-vertical='hotels-serp'] .forms-tabs li.active:hover a:focus,
 [data-wl-vertical='railways-serp'] .forms-tabs li.active a,
+[data-wl-vertical='railways-serp'] .forms-tabs li:hover a,
+[data-wl-vertical='railways-serp'] .forms-tabs li:focus a,
 [data-wl-vertical='railways-serp'] .forms-tabs li.active:hover a,
 [data-wl-vertical='railways-serp'] .forms-tabs li.active:hover a:hover,
 [data-wl-vertical='railways-serp'] .forms-tabs li.active:hover a:focus {
