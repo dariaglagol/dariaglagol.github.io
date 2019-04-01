@@ -88,6 +88,17 @@
     color: #ffffff !important;
 }
 
+[data-wl-page="index"] .forms-tabs li.active a,
+[data-wl-page="index"] .forms-tabs li.active:hover a,
+[data-wl-page="index"] .forms-tabs li.active:hover a:hover,
+[data-wl-page="index"] .forms-tabs li.active:hover a:focus {
+    border-bottom-color: #ffffff !important;
+}
+
+.btn-logout, .btn-logout svg {
+    vertical-align: baseline;
+}
+
 nav .ottwl-header__block .icons-btn.btn-lg {
     padding: 0;
 }
