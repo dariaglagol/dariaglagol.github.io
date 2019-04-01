@@ -112,11 +112,15 @@ nav .ottwl-header__block .icons-btn.btn-lg {
 
 [data-wl-page="index"] .lk-head-btn:hover,
 [data-wl-page="index"] .lk-head-btn:focus {
-    border-color: #ffffff;
+    border-color: #ffffff !important;
 }
 
 [data-wl-page="index"] .ottwl-header__logout-btn svg {
     fill: #ffffff;
+}
+
+.ottwl-header__block .logo {
+
 }
 
 [data-wl-vertical='avia-serp'].ottSaasBody {
