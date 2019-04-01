@@ -94,6 +94,15 @@
     opacity: 1;
 }
 
+[data-wl-page="index"] .balance-in-head {
+    display: none;
+}
+
+[data-wl-page="index"] .lk-head-btn {
+    color: #ffffff;
+    border: none;
+}
+
 [data-wl-vertical='avia-serp'].ottSaasBody {
     background:url(https://static.onetwotrip.com/images/partners/gazprombank/aviaBg.jpg) center no-repeat;
 }
