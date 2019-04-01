@@ -79,6 +79,14 @@
     background-size: cover;
 }
 
+[data-wl-page="index"] .forms-tabs li a {
+    color: #ffffff;
+}
+
+[data-wl-page="index"] .forms-tabs li.active a {
+    border-bottom-color: #ffffff;
+}
+
 [data-wl-vertical='avia-serp'].ottSaasBody {
     background:url(https://static.onetwotrip.com/images/partners/gazprombank/aviaBg.jpg) center no-repeat;
 }
@@ -90,5 +98,7 @@
 [data-wl-vertical='railways-serp'].ottSaasBody {
     background:url(https://static.onetwotrip.com/images/partners/gazprombank/trainBg.jpg) center no-repeat;
 }
+
+
 
 
