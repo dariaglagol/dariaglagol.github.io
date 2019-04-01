@@ -91,6 +91,7 @@
 [data-wl-vertical='railways-serp'] .forms-tabs li.active:hover a:hover,
 [data-wl-vertical='railways-serp'] .forms-tabs li.active:hover a:focus {
     opacity: 1;
+    color: #ffffff !important;
     border-bottom-color: #ffffff !important;
 }
 
