@@ -71,14 +71,10 @@
     height: 40px;
 }
 
-#ottSaasHeader {
-    background: #ffffff;
+/*#ottSaasHeader {*/
+/*    background: #ffffff;*/
+/*}*/
+
+[data-wl-page="index"].ottSaasBody {
+    background:url(https://static.onetwotrip.com/images/partners/gazprombank/aviaBg.jpg) center no-repeat;
 }
-
-/*.ottwl-header__logout-btn svg {*/
-    /*display: none;*/
-/*}*/
-
-/*.ottwl-header__logout-btn::before {*/
-    /*content: ;*/
-/*}*/

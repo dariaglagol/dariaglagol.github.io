@@ -1,12 +1,13 @@
 <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
     .gazprombank-footer__container {
-        font-family: Roboto, Arial, sans-serif;
+        font-family: 'Roboto', Arial, sans-serif;
         background-image: linear-gradient(to bottom, #1554b8, #0070c3);
         -webkit-font-smoothing: antialiased;
     }
 
     .gazprombank-footer__content {
-        padding: 30px 25px 29px;
+        padding: 30px 25px 30px;
         color: #000;
     }
 
@@ -19,7 +20,7 @@
         margin: 0 auto;
     }
 
-    .bank-info-block .bank-info-block__title {
+    .bank-info-block {
         font-size: 18px;
         font-weight: normal;
         font-style: normal;
@@ -27,15 +28,15 @@
         line-height: normal;
         letter-spacing: -0.1px;
         color: white;
-        padding: 12px 0 19px;
+        padding: 0 0 24px;
     }
 
     .bank-info-block p {
-        width: 215px;
+        width: 222px;
         margin-top: 35px;
         font-size: 14px;
         line-height: normal;
-        letter-spacing: 0.1px;
+        letter-spacing: -0.1px;
         opacity: 0.7;
         color: #ffffff;
     }
@@ -71,7 +72,7 @@
         text-align: center;
         background: #fff;
         color: #262c40;
-        padding: 16px 0;
+        padding: 20px 0;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
@@ -99,7 +100,7 @@
         font-stretch: normal;
         line-height: normal;
         letter-spacing: -0.1px;
-        max-width: 105px;
+        max-width: 185px;
     }
 
     .gazprombank-footer__logo-block {
@@ -113,15 +114,23 @@
     .gazprombank-footer__info-block-phones {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 18px;
+        padding-bottom: 14px;
     }
 
     .gazprombank-footer__user-info-block p {
-        margin: 14px 0 10px;
+        margin: 5px 0 10px;
     }
 
     .ott-info-block {
+        position: relative;
         margin-right: 5px;
+        padding-left: 83px;
+    }
+
+    .info-block__ott-logo svg {
+        position: absolute;
+        top: -7px;
+        left: 0;
     }
 
     @media(max-width: 980px) {
@@ -140,6 +149,10 @@
     }
 
     @media(max-width: 620px) {
+        .gazprombank-footer__user-info-block.bank-info-block {
+            margin-bottom: 0;
+        }
+
         .gazprombank-footer__content {
             padding: 30px 5px 32px;
         }
@@ -175,6 +188,23 @@
         .gazprombank-footer__warning .warning-text {
             font-size: 14px;
         }
+
+        .ott-info-block {
+            padding-top: 73px;
+            padding-left: 0;
+            margin-right: 0;
+        }
+
+        .info-block__ott-logo svg {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .bank-info-block {
+            padding-bottom: 14px;
+        }
     }
 </style>
 <footer class="gazprombank-footer">
@@ -191,9 +221,8 @@
                 <div class="gazprombank-footer__info-block">
                     <div class="gazprombank-footer__info-block-phones">
                         <div class="gazprombank-footer__user-info-block bank-info-block">
-                            <div class="bank-info-block__title">Подробнее о карте</div>
                             <p>Служба поддержки держателей банковской карты Газпромбанка</p>
-                            <a class="phone-link" href="tel:88001000089">8 800 100 00 89</a>
+                            <span class="phone-link">8 800 100 00 89</span>
                         </div>
 
                         <div class="gazprombank-footer__user-info-block ott-info-block">
@@ -206,15 +235,14 @@
                                 </svg>
                             </div>
                             <p>Горячая линия по авиабилетам, ж/д билетам и отелям</p>
-                            <a class="phone-link" href="tel:+74959816881">+7 495 981 68 81</a>
-                            <a class="phone-link" href="tel:+74956468362">+7 495 646 83 62</a>
+                            <span class="phone-link">+7 495 981 68 81</span>
+                            <span class="phone-link">+7 495 646 83 62</span>
                         </div>
                     </div>
                     <div class="gazprombank-footer__info-block-links">
                         <div class="gazprombank-footer__container-inner--loyal">
                             <a class="rule-link" target="_blank" href="https://www.whitetravel.ru/docs/ru/WhiteTravel_End-user%20license%20agreement.pdf">Пользовательское соглашение</a>
                             <a class="rule-link" target="_blank" href="https://www.whitetravel.ru/docs/ru/WhiteTravel_Privacy%20Policy.pdf">Политика конфиденциальности</a>
-                            <a class="rule-link" target="_blank" href="https://www.gazprombank.ru/corporate/depositary_services/corporate_actions_of_issuers/">Сообщение о ценных бумагах</a>
                             <a class="rule-link" target="_blank" href="https://www.whitetravel.ru/docs/ru/Cookies_Policy.pdf">Политика использования cookie-файлов</a>
                         </div>
                     </div>
