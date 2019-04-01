@@ -74,7 +74,7 @@
 [data-wl-vertical='avia-serp'] .forms-tabs li a,
 [data-wl-vertical='hotels-serp'] .forms-tabs li a,
 [data-wl-vertical='railways-serp'] .forms-tabs li a {
-    color: #ffffff;
+    color: #ffffff !important;
     opacity: 0.8;
 }
 
