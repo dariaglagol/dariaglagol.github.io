@@ -76,5 +76,19 @@
 /*}*/
 
 [data-wl-page="index"].ottSaasBody {
+    background-size: cover;
+}
+
+[data-wl-vertical='avia-serp'].ottSaasBody {
     background:url(https://static.onetwotrip.com/images/partners/gazprombank/aviaBg.jpg) center no-repeat;
 }
+
+[data-wl-vertical='hotels-serp'].ottSaasBody {
+    background:url(https://static.onetwotrip.com/images/partners/gazprombank/hotelBg.jpg) center no-repeat;
+}
+
+[data-wl-vertical='railways-serp'].ottSaasBody {
+    background:url(https://static.onetwotrip.com/images/partners/gazprombank/trainBg.jpg) center no-repeat;
+}
+
+
