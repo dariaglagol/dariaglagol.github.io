@@ -200,22 +200,30 @@
     background-size: cover;
 }
 
-.mobile-menu svg.__open  {
+[data-wl-vertical='avia-serp'] .mobile-menu svg.__open,
+[data-wl-vertical='hotels-serp'] .mobile-menu svg.__open,
+[data-wl-vertical='railways-serp'] .mobile-menu svg.__open {
     fill: #ffffff;
     opacity: 0.8;
 }
 
-.mobile-menu .icons-btn:hover svg.__open {
+[data-wl-vertical='avia-serp'] .mobile-menu .icons-btn:hover svg.__open,
+[data-wl-vertical='hotels-serp'] .mobile-menu .icons-btn:hover svg.__open,
+[data-wl-vertical='railways-serp'] .mobile-menu .icons-btn:hover svg.__open {
     fill: #ffffff;
     opacity: 1;
 }
 
-nav:not(.mobile-menu-open) .ottwl-header__logout-btn svg path {
+[data-wl-vertical='avia-serp'] nav:not(.mobile-menu-open) .ottwl-header__logout-btn svg path,
+[data-wl-vertical='hotels-serp'] nav:not(.mobile-menu-open) .ottwl-header__logout-btn svg path,
+[data-wl-vertical='railways-serp'] nav:not(.mobile-menu-open) .ottwl-header__logout-btn svg path {
     fill: #ffffff;
     opacity: 0.8;
 }
 
-nav:not(.mobile-menu-open) .ottwl-header__logout-btn:hover svg path {
+[data-wl-vertical='avia-serp'] nav:not(.mobile-menu-open) .ottwl-header__logout-btn:hover svg path,
+[data-wl-vertical='hotels-serp'] nav:not(.mobile-menu-open) .ottwl-header__logout-btn:hover svg path,
+[data-wl-vertical='railways-serp'] nav:not(.mobile-menu-open) .ottwl-header__logout-btn:hover svg path {
     fill: #ffffff;
     opacity: 1;
 }
