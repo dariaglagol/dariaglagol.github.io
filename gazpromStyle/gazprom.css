@@ -128,6 +128,7 @@
 [data-wl-vertical='hotels-serp'] .lk-head-btn,
 [data-wl-vertical='railways-serp'] .lk-head-btn {
     color: #ffffff;
+    opacity: 0.8;
     border-color: transparent;
 }
 
@@ -137,7 +138,7 @@
 [data-wl-vertical='hotels-serp'] .lk-head-btn:focus,
 [data-wl-vertical='railways-serp'] .lk-head-btn:hover,
 [data-wl-vertical='railways-serp'] .lk-head-btn:focus {
-    border-color: #ffffff !important;
+    opacity: 1;
 }
 
 [data-wl-vertical='avia-serp'] .lk-head-btn,
