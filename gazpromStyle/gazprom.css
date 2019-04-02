@@ -139,6 +139,7 @@
 [data-wl-vertical='railways-serp'] .lk-head-btn:hover,
 [data-wl-vertical='railways-serp'] .lk-head-btn:focus {
     opacity: 1;
+    border-color: transparent;
 }
 
 [data-wl-vertical='avia-serp'] .lk-head-btn,
@@ -197,6 +198,26 @@
 [data-wl-vertical='railways-serp'].ottSaasBody {
     background:url(https://static.onetwotrip.com/images/partners/gazprombank/trainBg.jpg) center no-repeat;
     background-size: cover;
+}
+
+.mobile-menu .__open svg {
+    fill: #ffffff;
+    opacity: 0.8;
+}
+
+.mobile-menu .icons-btn:hover svg.__open {
+    fill: #ffffff;
+    opacity: 1;
+}
+
+nav:not(.mobile-menu-open) .ottwl-header__logout-btn svg {
+    fill: #ffffff;
+    opacity: 0.8;
+}
+
+nav:not(.mobile-menu-open) .ottwl-header__logout-btn:hover svg {
+    fill: #ffffff;
+    opacity: 1;
 }
 
 
