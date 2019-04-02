@@ -200,7 +200,7 @@
     background-size: cover;
 }
 
-.mobile-menu .__open svg {
+.mobile-menu svg.__open  {
     fill: #ffffff;
     opacity: 0.8;
 }
@@ -210,12 +210,12 @@
     opacity: 1;
 }
 
-nav:not(.mobile-menu-open) .ottwl-header__logout-btn svg {
+nav:not(.mobile-menu-open) .ottwl-header__logout-btn svg path {
     fill: #ffffff;
     opacity: 0.8;
 }
 
-nav:not(.mobile-menu-open) .ottwl-header__logout-btn:hover svg {
+nav:not(.mobile-menu-open) .ottwl-header__logout-btn:hover svg path {
     fill: #ffffff;
     opacity: 1;
 }
