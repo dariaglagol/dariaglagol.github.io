@@ -228,6 +228,12 @@
     opacity: 1;
 }
 
+[data-wl-vertical='avia-serp'] .ottwl-header__auth-dialog-btn svg,
+[data-wl-vertical='hotels-serp'] .ottwl-header__auth-dialog-btn svg,
+[data-wl-vertical='railways-serp'] .ottwl-header__auth-dialog-btn svg {
+    fill: #ffffff;
+}
+
 
 
 
