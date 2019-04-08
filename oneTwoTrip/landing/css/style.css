@@ -35,7 +35,7 @@ html {
 }
 .head {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background: url("../../images/bg-mobile-banner.jpg");
+  background: url("../images/bg-mobile-banner.jpg");
 }
 .head__user-area {
   display: -webkit-box;
