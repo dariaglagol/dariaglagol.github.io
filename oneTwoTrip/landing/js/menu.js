@@ -1,25 +1,133 @@
-const openMenuBtn = document.querySelector('.user-menu__btn--open');
-const closeMenuBtn = document.querySelector('.user-menu__btn--close');
-const menu = document.querySelector('.user-menu__mobile');
-const substrate = document.querySelector('.substrate');
+(function(){
+    //MOBILE MENU START
+    const openMenuBtn = document.querySelector('.user-menu__btn--open');
+    const closeMenuBtn = document.querySelector('.user-menu__btn--close');
+    const menu = document.querySelector('.user-menu__mobile');
+    const substrate = document.querySelector('.substrate');
+    const body = document.querySelector('body');
 
-function handleOpenMenuBtn() {
-    menu.classList.remove('user-menu__mobile--close');
-    menu.classList.add('user-menu__mobile--open');
-    substrate.classList.remove('substrate--closed');
+    function handleOpenMenuBtn() {
+        menu.classList.remove('user-menu__mobile--close');
+        menu.classList.add('user-menu__mobile--open');
+        substrate.classList.remove('substrate--closed');
+        body.style.overflow = 'hidden';
 
-    closeMenuBtn.addEventListener('click', handleCloseMenuBtn);
-    openMenuBtn.removeEventListener('click', handleOpenMenuBtn);
-};
+        closeMenuBtn.addEventListener('click', handleCloseMenuBtn);
+        openMenuBtn.removeEventListener('click', handleOpenMenuBtn);
+    };
 
-function handleCloseMenuBtn() {
-    menu.classList.remove('user-menu__mobile--open');
-    menu.classList.add('user-menu__mobile--close');
-    substrate.classList.add('substrate--closed');
+    function handleCloseMenuBtn() {
+        menu.classList.remove('user-menu__mobile--open');
+        menu.classList.add('user-menu__mobile--close');
+        substrate.classList.add('substrate--closed');
+        body.style.overflow = 'auto';
+
+        openMenuBtn.addEventListener('click', handleOpenMenuBtn);
+        closeMenuBtn.removeEventListener('click', handleCloseMenuBtn);
+    }
 
     openMenuBtn.addEventListener('click', handleOpenMenuBtn);
-    closeMenuBtn.removeEventListener('click', handleCloseMenuBtn);
-}
 
-openMenuBtn.addEventListener('click', handleOpenMenuBtn);
+//MOBILE MENU END
 
+//SIGN UP AND SING IN POPUP START
+    const signIn = document.querySelector('.user-menu__link--sign-in');
+    const mainContent = document.querySelector('main');
+    const signUp = document.querySelector('.user-menu__link--sign-up');
+    const popupTemplate = document.querySelector('#popup');
+    const popupNode = popupTemplate.content.querySelector('.popup-wrapper');
+    const popup = popupNode.cloneNode(true);
+
+    function handleOpenSignIn() {
+        const loginFormTemplate = document.querySelector('#login');
+        const loginFormNode = loginFormTemplate.content.querySelector('.auth-modal');
+        const loginForm = loginFormNode.cloneNode(true);
+
+        if(popup.childNodes[3]) {
+            popup.removeChild(popup.childNodes[3])
+        }
+
+        popup.appendChild(loginForm);
+        mainContent.appendChild(popup);
+
+        body.style.overflow = 'hidden';
+        substrate.classList.remove('substrate--closed');
+
+        const closeButton = document.querySelector('.popup__btn--close');
+
+        closeButton.addEventListener('click', handleCloseSignForms);
+        signUp.removeEventListener('click', handleOpenSignUp);
+    }
+
+    function handleOpenSignUp() {
+        const registerFormTempalte = document.querySelector('#registrationStart')
+        const registerFormNode = registerFormTempalte.content.querySelector('.auth-modal');
+        const registerForm = registerFormNode.cloneNode(true);
+
+        if(popup.childNodes[3]) {
+            popup.removeChild(popup.childNodes[3])
+        }
+
+        popup.appendChild(registerForm);
+        mainContent.appendChild(popup);
+
+        body.style.overflow = 'hidden';
+        substrate.classList.remove('substrate--closed');
+
+        const closeButton = document.querySelector('.popup__btn--close');
+        handleRegistrationSelect();
+
+        closeButton.addEventListener('click', handleCloseSignForms);
+        signIn.removeEventListener('click', handleOpenSignUp);
+    }
+
+    function handleCloseSignForms() {
+        const popup = document.querySelector('.popup-wrapper');
+        const closeButton = document.querySelector('.popup__btn--close');
+
+        body.style.overflow = 'auto';
+        if(!menu.classList.contains('user-menu__mobile--open')) {
+            substrate.classList.add('substrate--closed');
+        }
+        closeButton.removeEventListener('click', handleCloseSignForms);
+        signUp.addEventListener('click', handleOpenSignUp);
+        popup.remove();
+    }
+
+    signUp.addEventListener('click', handleOpenSignUp);
+    signIn.addEventListener('click', handleOpenSignIn);
+
+//SIGN UP AND SING IN POPUP END
+
+//SELECT START
+    function handleRegistrationSelect() {
+        const selectBtn = document.querySelector('.auth-modal__field--pseudo-select');
+        const itemsList = document.querySelector('.auth-modal__pseudo-select-block');
+        const selectValue = document.querySelector('.auth-modal__field--select');
+        const token = 'auth-modal__pseudo-select-block--closed';
+        let btnState = 'close';
+
+        selectBtn.addEventListener('click', () => {
+            itemsList.classList.toggle(token);
+            btnState = itemsList.classList.contains(token) ? 'close' : 'open';
+            selectBtn.setAttribute('data-state', btnState);
+        });
+
+        itemsList.addEventListener('click', () => {
+            const item = event.target;
+            let value = '';
+            let text = '';
+            if(item.hasAttribute('data-value')) {
+                value = item.getAttribute('data-value');
+                text = item.innerHTML
+            }
+            selectBtn.innerHTML = text;
+            itemsList.classList.toggle(token);
+            btnState = itemsList.classList.contains(token) ? 'close' : 'open';
+            selectBtn.setAttribute('data-state', btnState);
+            selectBtn.setAttribute('data-dirty', 'true');
+            selectValue.setAttribute('value', value);
+        });
+    }
+//SELECT END
+})();

@@ -1,1 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70"><defs><linearGradient id="a" x1="38.293%" x2="27.461%" y1="100%" y2="11.223%"><stop offset="0%" stop-color="#5780F1"/><stop offset="100%" stop-color="#A3BCFF"/></linearGradient><circle id="c" cx="17.298" cy="9.919" r="9"/><filter id="b" width="166.7%" height="166.7%" x="-33.3%" y="-33.3%" filterUnits="objectBoundingBox"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/><feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/></filter><linearGradient id="d" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#575757"/><stop offset="100%" stop-color="#141414"/></linearGradient><linearGradient id="e" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#575757"/><stop offset="100%" stop-color="#141414"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle cx="35" cy="35" r="35" fill="url(#a)"/><path d="M11 11h48v48H11z"/><g transform="translate(17 14)"><use fill="#000" filter="url(#b)" xlink:href="#c"/><use fill="#FFF" xlink:href="#c"/></g><rect width="36.02" height="29.017" fill="url(#d)" rx="3.832" transform="translate(17 23.773)"/><path fill="#53AAF7" d="M48.788 38.846a1.33 1.33 0 0 1-1.333 1.328 1.33 1.33 0 0 1-1.332-1.328 1.33 1.33 0 0 1 1.332-1.327 1.33 1.33 0 0 1 1.333 1.327"/><g transform="translate(17 23.773)"><rect width="36.02" height="29.017" rx="3.832"/><rect width="15" height="11" x="23" y="9.195" fill="url(#e)" rx="3"/><path fill="#FFF" d="M28.337 17.464a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70">
+    <defs>
+        <linearGradient id="1234" x1="38.293%" x2="27.461%" y1="100%" y2="11.223%">
+            <stop offset="0%" stop-color="#5780F1"/>
+            <stop offset="100%" stop-color="#A3BCFF"/>
+        </linearGradient>
+        <circle id="c" cx="17.298" cy="9.919" r="9"/>
+        <filter id="b" width="166.7%" height="166.7%" x="-33.3%" y="-33.3%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        </filter>
+        <linearGradient id="d" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#575757"/>
+            <stop offset="100%" stop-color="#141414"/>
+        </linearGradient>
+        <linearGradient id="e" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#575757"/>
+            <stop offset="100%" stop-color="#141414"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="35" cy="35" r="35" fill="url(#1234)"/>
+        <path d="M11 11h48v48H11z"/>
+        <g transform="translate(17 14)">
+            <use fill="#000" filter="url(#b)" xlink:href="#c"/>
+            <use fill="#FFF" xlink:href="#c"/>
+        </g>
+        <rect width="36.02" height="29.017" fill="url(#d)" rx="3.832" transform="translate(17 23.773)"/>
+        <path fill="#53AAF7"
+              d="M48.788 38.846a1.33 1.33 0 0 1-1.333 1.328 1.33 1.33 0 0 1-1.332-1.328 1.33 1.33 0 0 1 1.332-1.327 1.33 1.33 0 0 1 1.333 1.327"/>
+        <g transform="translate(17 23.773)">
+            <rect width="36.02" height="29.017" rx="3.832"/>
+            <rect width="15" height="11" x="23" y="9.195" fill="url(#e)" rx="3"/>
+            <path fill="#FFF" d="M28.337 17.464a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+        </g>
+    </g>
+</svg>
