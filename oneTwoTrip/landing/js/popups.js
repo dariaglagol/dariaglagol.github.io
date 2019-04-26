@@ -170,7 +170,37 @@ function cleanControls(elem, array) {
 
 //CAROUSEL
 
-const carouselToggleList = document.querySelector('.carousel__toggle-list');
+const carouselToggleList = document.querySelectorAll('.tools__name-item');
+const carouselItemList = document.querySelectorAll('.tools__caption-item');
+
+const carouselToggleOptions = {
+    link: {},
+    deepLink: {},
+    banner: {},
+    searchForm: {},
+    searchFormWithRes: {},
+    apiAndWl: {}
+};
+
+const carouselItemOptions = {
+    link: {},
+    deepLink: {},
+    banner: {},
+    searchForm: {},
+    searchFormWithRes: {},
+    apiAndWl: {}
+};
+
+for (let i = 0; i < carouselToggleList.length; i++) {
+    Object.keys(carouselToggleOptions).forEach(key => {
+        carouselToggleOptions[key] = {
+            node: carouselToggleList[i],
+            clientWidth: carouselToggleList[i].getBoundingClientRect().width
+        };
+    }) ;
+}
+
+console.log(carouselItemOptions);
 
 
 
