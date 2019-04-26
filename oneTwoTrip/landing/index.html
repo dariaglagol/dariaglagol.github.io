@@ -67,10 +67,11 @@
             <section class="navigation__entrance-menu user-menu">
               <div class="user-menu__mobile">
                 <div class="user-menu__control-area">
-                  <!--TODO: тут должна быть svg на открытие меню-->
-                  <!--            <button class="head__login-btn">-->
-
-                  <!--            </button>-->
+                  <button class="user-menu__btn user-menu__link--sign-in">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" stroke="#fff">
+                      <use xlink:href="images/sprite.svg#icon-login"></use>
+                    </svg>
+                  </button>
                 </div>
               </div>
               <div class="user-menu__desktop">
@@ -772,7 +773,7 @@
     <template id="popup">
       <div class="popup-wrapper">
         <button class="popup__btn popup__btn--close">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"viewBox="0 0 16 16" stroke="#888"><path d="M1 1l14 14m0-14L1 15" fill="none" fill-rule="evenodd" stroke-width="2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"viewBox="0 0 16 16" stroke="#212121"><path d="M1 1l14 14m0-14L1 15" fill="none" fill-rule="evenodd" stroke-width="2"/></svg>
         </button>
       </div>
     </template>
@@ -1084,6 +1085,7 @@
         </p>
       </div>
     </template>
+    <script src="./js/svgxuse.min.js" defer></script>
     <script src="./js/menu.js"></script>
     <script src="./js/popups.js"></script>
   </body>

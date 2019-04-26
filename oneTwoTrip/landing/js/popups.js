@@ -7,6 +7,7 @@ const railwaysNode = document.querySelector('#yield-railways').content;
 const hotelsNode = document.querySelector('#yield-hotels').content;
 const certificateNode = document.querySelector('#yield-certificates').content;
 const substrate = document.querySelector('.substrate');
+const certificateLinkDesktop = document.querySelector('.yield__certificate-link');
 const body = document.querySelector('body');
 
 const popup = popupNode.cloneNode(true);
@@ -58,7 +59,21 @@ function handleOpenVerticalPopups() {
 
         sliderMap['yield__price-list-wrapper'].appendChild(popup);
 
-        const closeMenuBtn = document.querySelector('.popup__btn--close');
+        const closeMenuBtn = popup.querySelector('.popup__btn--close');
+        closeMenuBtn.addEventListener('click', handleCloseVerticalPopups);
+    }
+
+    if(item === certificateLinkDesktop) {
+        body.style.overflow = 'hidden';
+        substrate.classList.remove('substrate--closed');
+
+        if(popup.children[1]) {
+            popup.removeChild(popup.children[1])
+        }
+
+        popup.appendChild(verticalsMap['certificate']);
+        sliderMap['yield__price-list-wrapper'].appendChild(popup);
+        const closeMenuBtn = popup.querySelector('.popup__btn--close');
         closeMenuBtn.addEventListener('click', handleCloseVerticalPopups);
     }
 }
@@ -75,6 +90,7 @@ function handleCloseVerticalPopups() {
 }
 
 sliderContainersList['yield__price-list-wrapper'].addEventListener('click', handleOpenVerticalPopups);
+certificateLinkDesktop.addEventListener('click', handleOpenVerticalPopups);
 
 //SLIDER
 

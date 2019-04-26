@@ -31,9 +31,9 @@
 //MOBILE MENU END
 
 //SIGN UP AND SING IN POPUP START
-    const signIn = document.querySelector('.user-menu__link--sign-in');
+    const signIn = document.querySelectorAll('.user-menu__link--sign-in');
     const mainContent = document.querySelector('main');
-    const signUp = document.querySelector('.user-menu__link--sign-up');
+    const signUp = document.querySelectorAll('.user-menu__link--sign-up');
     const popupTemplate = document.querySelector('#popup');
     const popupNode = popupTemplate.content.querySelector('.popup-wrapper');
     const popup = popupNode.cloneNode(true);
@@ -56,12 +56,15 @@
         const closeButton = document.querySelector('.popup__btn--close');
 
         closeButton.addEventListener('click', handleCloseSignForms);
-        signUp.removeEventListener('click', handleOpenSignUp);
+
+        for(let i = 0; i < signUp.length; i++) {
+            signUp[i].removeEventListener('click', handleOpenSignIn);
+        }
     }
 
     function handleOpenSignUp() {
-        const registerFormTempalte = document.querySelector('#registrationStart')
-        const registerFormNode = registerFormTempalte.content.querySelector('.auth-modal');
+        const registerFormTemplate = document.querySelector('#registrationStart');
+        const registerFormNode = registerFormTemplate.content.querySelector('.auth-modal');
         const registerForm = registerFormNode.cloneNode(true);
 
         if(popup.childNodes[3]) {
@@ -74,28 +77,44 @@
         body.style.overflow = 'hidden';
         substrate.classList.remove('substrate--closed');
 
-        const closeButton = document.querySelector('.popup__btn--close');
+        const closeButton = popup.querySelector('.popup__btn--close');
         handleRegistrationSelect();
 
         closeButton.addEventListener('click', handleCloseSignForms);
-        signIn.removeEventListener('click', handleOpenSignUp);
+
+        for(let i = 0; i < signIn.length; i++) {
+            signIn[i].removeEventListener('click', handleOpenSignIn);
+        }
     }
 
     function handleCloseSignForms() {
         const popup = document.querySelector('.popup-wrapper');
-        const closeButton = document.querySelector('.popup__btn--close');
+        const closeButton = popup.querySelector('.popup__btn--close');
 
         body.style.overflow = 'auto';
         if(!menu.classList.contains('user-menu__mobile--open')) {
             substrate.classList.add('substrate--closed');
         }
         closeButton.removeEventListener('click', handleCloseSignForms);
-        signUp.addEventListener('click', handleOpenSignUp);
+
+        for(let i = 0; i < signUp.length; i++) {
+            signUp[i].addEventListener('click', handleOpenSignUp);
+        }
+
+        for(let i = 0; i < signIn.length; i++) {
+            signIn[i].addEventListener('click', handleOpenSignIn);
+        }
+
         popup.remove();
     }
 
-    signUp.addEventListener('click', handleOpenSignUp);
-    signIn.addEventListener('click', handleOpenSignIn);
+    for(let i = 0; i < signUp.length; i++) {
+        signUp[i].addEventListener('click', handleOpenSignUp);
+    }
+
+    for(let i = 0; i < signIn.length; i++) {
+        signIn[i].addEventListener('click', handleOpenSignIn);
+    }
 
 //SIGN UP AND SING IN POPUP END
 

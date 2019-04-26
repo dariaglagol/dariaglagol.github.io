@@ -398,8 +398,11 @@ template {
   display: none;
 }
 .yield__popup-inner-wrapper {
+  min-width: 300px;
+  max-height: 500px;
+  overflow-y: scroll;
   width: 100%;
-  padding: 48px 16px;
+  padding: 16px;
 }
 .yield__popup-head {
   margin: 0;
@@ -525,6 +528,10 @@ template {
   .yield__popup-inner-wrapper {
     padding: 11px 20px;
   }
+  .yield__popup-inner-wrapper {
+    min-width: 700px;
+    max-width: 846px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .yield {
@@ -583,6 +590,26 @@ template {
     height: 230px;
     background: url("../images/img-desktop-OTT-card.png") no-repeat center;
     background-size: contain;
+  }
+  .yield__popup-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .yield__popup-list li {
+    -webkit-box-flex: 45%;
+        -ms-flex: 45% 0 0px;
+            flex: 45% 0 0;
+  }
+  .yield__popup-head {
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
   }
 }
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-width: 768px) and (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
@@ -1269,14 +1296,11 @@ template {
   position: fixed;
   top: 16px;
   left: 50%;
-  width: calc(100% - 7%);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 2;
   background-color: #ffffff;
   border-radius: 5px;
-  overflow-y: scroll;
-  height: calc(100vh - 32px);
 }
 .popup__btn {
   margin-top: 16px;
@@ -1305,7 +1329,9 @@ template {
 }
 .auth-modal {
   position: relative;
+  min-width: 300px;
   max-width: 400px;
+  max-height: 500px;
   padding: 11px 20px 20px;
   overflow-y: scroll;
   font-family: 'Roboto', Helvetica, sans-serif;
@@ -1390,6 +1416,7 @@ template {
 .auth-modal__field {
   width: 100%;
   padding: 16px;
+  border: 1px solid #cccccc;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-size: 14px;
   line-height: normal;
