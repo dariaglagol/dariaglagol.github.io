@@ -400,7 +400,7 @@
         <h2 class="calculator__header">Калькулятор дохода</h2>
         <p class="calculator__subheader">Размещая даже один инструмент, вы зарабатываете на всех вертикалях</p>
         <form action="#" class="calculator__wrapper">
-          <fieldset class="calculator__field-wrapper">
+          <fieldset class="calculator__field-wrapper calculator__field-wrapper--avia">
             <div class="calculator__text-area">
               <p class="calculator__text-head-wrapper">
                 <span class="calculator__text-head">Проданных авиабилетов</span>
@@ -408,29 +408,29 @@
               </p>
               <p class="calculator__text-result">5 000</p>
             </div>
-            <label class="calculator__text-area">
-              <span class="calculator__range-gray-field"></span>
+            <label class="calculator__input-area">
+              <span class="calculator__range-grey-field"></span>
               <input class="calculator__range"
                      type="range"
                      min="5"
                      max="10000"
                      name="avia"
                      id="aviaRange"
-                     value="5000"/>
+                     value="5000" />
             </label>
           </fieldset>
-          <fieldset class="calculator__field-wrapper">
-            <div class="calculator__text-area">
+          <fieldset class="calculator__field-wrapper calculator__field-wrapper--markup">
+            <div class="calculator__text-area calculator__text-area--number-input">
               <p class="calculator__text-head-wrapper">
                 <span class="calculator__text-head">Ваша дополнительная наценка на авиабилеты</span>
                 <span class="calculator__text-subhead">Можно сделать любую наценку</span>
               </p>
             </div>
-            <label class="calculator__text-area">
-              <input type="number" class="calculator__number"/>
+            <label class="calculator__input-area calculator__input-area--number-input">
+              <input type="number" class="calculator__number" value="10"/>
             </label>
           </fieldset>
-          <fieldset class="calculator__field-wrapper">
+          <fieldset class="calculator__field-wrapper calculator__field-wrapper--railways">
             <div class="calculator__text-area">
               <p class="calculator__text-head-wrapper">
                 <span class="calculator__text-head">Забронированных ж/д билетов</span>
@@ -438,8 +438,8 @@
               </p>
               <p class="calculator__text-result">5 000</p>
             </div>
-            <label class="calculator__text-area">
-              <span class="calculator__range-gray-field"></span>
+            <label class="calculator__input-area">
+              <span class="calculator__range-grey-field"></span>
               <input class="calculator__range"
                      type="range"
                      min="5"
@@ -449,7 +449,7 @@
                      value="5000"/>
             </label>
           </fieldset>
-          <fieldset class="calculator__field-wrapper">
+          <fieldset class="calculator__field-wrapper calculator__field-wrapper--hotels">
             <div class="calculator__text-area">
               <p class="calculator__text-head-wrapper">
                 <span class="calculator__text-head">Забрронированных отелей</span>
@@ -457,8 +457,8 @@
               </p>
               <p class="calculator__text-result">5 000</p>
             </div>
-            <label class="calculator__text-area">
-              <span class="calculator__range-gray-field"></span>
+            <label class="calculator__input-area">
+              <span class="calculator__range-grey-field"></span>
               <input class="calculator__range"
                      type="range"
                      min="5"
@@ -468,7 +468,7 @@
                      value="5000"/>
             </label>
           </fieldset>
-          <fieldset class="calculator__field-wrapper">
+          <fieldset class="calculator__field-wrapper calculator__field-wrapper--certificates">
             <div class="calculator__text-area">
               <p class="calculator__text-head-wrapper">
                 <span class="calculator__text-head">Проданных сертификатов</span>
@@ -476,8 +476,8 @@
               </p>
               <p class="calculator__text-result">5 000</p>
             </div>
-            <label class="calculator__text-area">
-              <span class="calculator__range-gray-field"></span>
+            <label class="calculator__input-area">
+              <span class="calculator__range-grey-field"></span>
               <input class="calculator__range"
                      type="range"
                      min="5"
@@ -487,9 +487,9 @@
                      value="5000"/>
             </label>
           </fieldset>
-          <div>
+          <div class="calculator__user-income">
             <p>Ваш доход в месяц</p>
-            <p>1 000 000 ₽</p>
+            <p class="calculator__income-number">1 000 000 ₽</p>
             <button type="button" class="calculator__btn btn btn--colored">Начать зарабатывать</button>
           </div>
         </form>
@@ -1182,5 +1182,6 @@
     <script src="./js/menu.js"></script>
     <script src="./js/popups.js"></script>
     <script src="./js/sliders.js"></script>
+    <script src="./js/calculator.js"></script>
   </body>
 </html>
