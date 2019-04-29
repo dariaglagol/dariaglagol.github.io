@@ -217,6 +217,7 @@
                 </div>
               </li>
               <li class="advantages__list-item">
+                <!--TODO: turn to the sprite-->
                 <div class="advantages__list-item-wrapper">
                   <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70">
                     <defs>
@@ -398,13 +399,69 @@
       <section class="calculator container">
         <h2 class="calculator__header">Калькулятор дохода</h2>
         <p class="calculator__subheader">Размещая даже один инструмент, вы зарабатываете на всех вертикалях</p>
-        <article class="calculator__tool-area"></article>
-        <button class="calculator__btn btn btn--colored">Начать зарабатывать</button>
+        <form action="#" class="calculator__wrapper">
+          <fieldset class="calculator__field-wrapper">
+            <div class="calculator__text-area">
+              <p class="calculator__text-head-wrapper">
+                <span class="calculator__text-head">Проданных авиабилетов</span>
+                <span class="calculator__text-subhead">Средняя стоимость 14 000 ₽</span>
+              </p>
+              <p class="calculator__text-result">5 000</p>
+            </div>
+            <label class="calculator__text-area">
+              <input type="range" min="5" max="10000" name="avia" id="aviaRange" value="5000"/>
+            </label>
+          </fieldset>
+          <fieldset class="calculator__field-wrapper">
+            <div class="text-area">
+              <p class="calculator__text-head">Ваша дополнительная наценка на авиабилеты</p>
+              <p class="calculator__text-subhead">Можно сделать любую наценку</p>
+            </div>
+            <label class="calculator__text-area">
+              <input type="number">
+            </label>
+          </fieldset>
+          <fieldset class="calculator__field-wrapper">
+            <div class="calculator__text-area">
+              <p class="calculator__text-head">Забронированных ж/д билетов</p>
+              <p class="calculator__subheader">Средняя стоимость 4 000 ₽</p>
+              <p class="calculator__text-result">5 000</p>
+            </div>
+            <label class="calculator__text-area">
+              <input type="range" min="5" max="10000" name="railways" id="railwaysRange" value="5000"/>
+            </label>
+          </fieldset>
+          <fieldset class="calculator__field-wrapper">
+            <div class="calculator__text-area">
+              <p class="calculator__text-head">Забрронированных отелей</p>
+              <p class="calculator__subheader">Средняя стоимость 18 000 ₽</p>
+              <p class="calculator__text-result">5 000</p>
+            </div>
+            <label class="calculator__text-area">
+              <input type="range" min="5" max="10000" name="hotels" id="hotelsRange" value="5000"/>
+            </label>
+          </fieldset>
+          <fieldset class="calculator__field-wrapper">
+            <div class="calculator__text-area">
+              <p>Проданных сертификатов</p>
+              <p>Средняя стоимость 18 000 ₽</p>
+              <p>5 000</p>
+            </div>
+            <label class="calculator__input-area">
+              <input type="range" min="5" max="10000" name="certificates" id="certificatesRange" value="5000"/>
+            </label>
+          </fieldset>
+          <div>
+            <p>Ваш доход в месяц</p>
+            <p>1 000 000 ₽</p>
+            <button type="button" class="calculator__btn btn btn--colored">Начать зарабатывать</button>
+          </div>
+        </form>
       </section>
       <section class="tools container container--colored">
         <div class="tools__inner-wrapper">
           <h2 class="tools__header">Инструменты программы</h2>
-          <div class="carousel">
+          <div class="carousel tools__carousel">
             <span class="carousel__arrow carousel__arrow--left"></span>
             <span class="carousel__arrow carousel__arrow--right"></span>
             <div class="carousel-wrapper">
@@ -427,7 +484,7 @@
                        alt="Инструмент 'Ссылка'"
                        width="582"/>
                 </figure>
-                <figure class="carousel__item carousel__item-active tools__caption-item">
+                <figure class="carousel__item tools__caption-item">
                   <figcaption class="tools__caption-text">
                     С помощью диплинка можно вести пользователей на любую страницу сайта OneTwoTrip (например «Авиабилеты из
                     Москвы в Санкт-Петербург» или «Отели в Париже»). Посадочных страниц может быть огромное множество. Все
@@ -689,12 +746,12 @@
       <section class="testimonials container container--colored">
         <div class="testimonials__inner-wrapper">
           <h2 class="testimonials__header">Отзывы партнеров</h2>
-          <div class="carousel">
+          <div class="carousel testimonials__carousel">
             <span class="carousel__arrow carousel__arrow--left"></span>
             <span class="carousel__arrow carousel__arrow--right"></span>
-            <div class="carousel-wrapper">
-              <div class="carousel__items-list testimonials__list">
-                <figure class="carousel__item carousel__item--active testimonials__item">
+            <div class="slider testimonials__list-wrapper carousel-wrapper">
+              <div class="testimonials__list carousel__items-list">
+                <figure class="carousel__item testimonials__item">
                   <blockquote class="testimonials__text">
                     Радует понятный интерфейс. Смотришь и видишь направления, с которых идут деньги. Получаю быстрые и
                     понятные ответы от службы поддержки.
@@ -752,12 +809,12 @@
                   </cite>
                 </figure>
               </div>
-            </div>
-            <div class="carousel__controls-list">
-              <span class="carousel__control-item carousel__control-item--active"></span>
-              <span class="carousel__control-item"></span>
-              <span class="carousel__control-item"></span>
-              <span class="carousel__control-item"></span>
+              <div class="carousel__controls-list">
+                <span class="carousel__control-item carousel__control-item--active"></span>
+                <span class="carousel__control-item"></span>
+                <span class="carousel__control-item"></span>
+                <span class="carousel__control-item"></span>
+              </div>
             </div>
           </div>
         </div>
@@ -1088,5 +1145,6 @@
     <script src="./js/svgxuse.min.js" defer></script>
     <script src="./js/menu.js"></script>
     <script src="./js/popups.js"></script>
+    <script src="./js/sliders.js"></script>
   </body>
 </html>
