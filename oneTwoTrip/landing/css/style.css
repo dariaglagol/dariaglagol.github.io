@@ -1636,6 +1636,7 @@ template {
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  z-index: 3;
   border: none;
 }
 @media screen and (min-width: 768px) {
