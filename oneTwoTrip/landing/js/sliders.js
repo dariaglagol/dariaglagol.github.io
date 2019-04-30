@@ -39,7 +39,7 @@
 
     function getScreenWidth(){
         const width = document.body.clientWidth;
-        if(width > 1280) {
+        if(width > 1279) {
             carouselToggleList.removeEventListener('click', createToolsCarousel);
         }
     }
@@ -106,7 +106,6 @@
     }
 
     function cleanControls(elem, array, className) {
-        console.log(elem)
         array.forEach(elem => elem.classList.remove(className));
         elem.classList.add(className);
     }
@@ -160,6 +159,7 @@
 
     function createToolsCarousel(e, arrayItems, activeClassName, nodeElement) {
         const target = e.target;
+
         if (isTargetInControlList(target).isInObject) {
             const togglesShift = isTargetInControlList(target).togglesShift;
             const itemSize = isTargetInControlList(target).itemSize;
@@ -172,7 +172,7 @@
 
         const detectArrow = target.classList.contains('carousel__arrow--left')
             ? 'left' : target.classList.contains('carousel__arrow--right')
-                ? 'right': null;
+            ? 'right': null;
 
         if (detectArrow) {
             addArrowControls(detectArrow, arrayItems, activeClassName, nodeElement);

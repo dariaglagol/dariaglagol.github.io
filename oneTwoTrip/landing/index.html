@@ -410,7 +410,7 @@
             </div>
             <label class="calculator__input-area">
               <span class="calculator__range-grey-field"></span>
-              <input class="calculator__range"
+              <input class="calculator__range calculator__range--avia"
                      type="range"
                      min="5"
                      max="10000"
@@ -427,7 +427,7 @@
               </p>
             </div>
             <label class="calculator__input-area calculator__input-area--number-input">
-              <input type="number" class="calculator__number" value="10"/>
+              <input type="text" class="calculator__number" value="10%" min="0" max="100"/>
             </label>
           </fieldset>
           <fieldset class="calculator__field-wrapper calculator__field-wrapper--railways">
@@ -440,7 +440,7 @@
             </div>
             <label class="calculator__input-area">
               <span class="calculator__range-grey-field"></span>
-              <input class="calculator__range"
+              <input class="calculator__range calculator__range--railways"
                      type="range"
                      min="5"
                      max="10000"
@@ -452,14 +452,14 @@
           <fieldset class="calculator__field-wrapper calculator__field-wrapper--hotels">
             <div class="calculator__text-area">
               <p class="calculator__text-head-wrapper">
-                <span class="calculator__text-head">Забрронированных отелей</span>
+                <span class="calculator__text-head">Забронированных отелей</span>
                 <span class="calculator__text-subhead">Средняя стоимость 18 000 ₽</span>
               </p>
               <p class="calculator__text-result">5 000</p>
             </div>
             <label class="calculator__input-area">
               <span class="calculator__range-grey-field"></span>
-              <input class="calculator__range"
+              <input class="calculator__range calculator__range--hotels"
                      type="range"
                      min="5"
                      max="10000"
@@ -472,13 +472,13 @@
             <div class="calculator__text-area">
               <p class="calculator__text-head-wrapper">
                 <span class="calculator__text-head">Проданных сертификатов</span>
-                <span class="calculator__text-subhead">редняя стоимость 18 000 ₽</span>
+                <span class="calculator__text-subhead">Средняя стоимость 10 000 ₽</span>
               </p>
               <p class="calculator__text-result">5 000</p>
             </div>
             <label class="calculator__input-area">
               <span class="calculator__range-grey-field"></span>
-              <input class="calculator__range"
+              <input class="calculator__range calculator__range--certificates"
                      type="range"
                      min="5"
                      max="10000"
@@ -1118,7 +1118,7 @@
         <form name="authForm" action="#" method="post">
           <fieldset class="auth-modal__block">
             <input class="auth-modal__field"
-                   name="email"
+                   name="text"
                    value=""
                    type="email"
                    id="userLogin"

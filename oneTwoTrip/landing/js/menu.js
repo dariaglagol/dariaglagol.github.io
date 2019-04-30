@@ -53,8 +53,7 @@
         body.style.overflow = 'hidden';
         substrate.classList.remove('substrate--closed');
 
-        const closeButton = document.querySelector('.popup__btn--close');
-
+        const closeButton = popup.querySelector('.popup__btn--close');
         closeButton.addEventListener('click', handleCloseSignForms);
 
         for(let i = 0; i < signUp.length; i++) {
@@ -95,6 +94,7 @@
         if(!menu.classList.contains('user-menu__mobile--open')) {
             substrate.classList.add('substrate--closed');
         }
+
         closeButton.removeEventListener('click', handleCloseSignForms);
 
         for(let i = 0; i < signUp.length; i++) {
