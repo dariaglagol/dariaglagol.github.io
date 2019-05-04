@@ -50,11 +50,22 @@
         popup.appendChild(loginForm);
         mainContent.appendChild(popup);
 
+        const loginLink = popup.querySelector('.auth-modal__link-area');
+        const forgotPasswordLink = popup.querySelector('.auth-modal__forgot-password');
+        const closeButton = popup.querySelector('.popup__btn--close');
+
         body.style.overflow = 'hidden';
         substrate.classList.remove('substrate--closed');
 
-        const closeButton = popup.querySelector('.popup__btn--close');
         closeButton.addEventListener('click', handleCloseSignForms);
+
+        loginLink.addEventListener('click', () => {
+            changeLoginAndRegForms(e, 'login')
+        });
+
+        console.log(forgotPasswordLink);
+
+        forgotPasswordLink.addEventListener('click', openRequestPasswordForm);
 
         for(let i = 0; i < signUp.length; i++) {
             signUp[i].removeEventListener('click', handleOpenSignIn);
@@ -76,10 +87,15 @@
         body.style.overflow = 'hidden';
         substrate.classList.remove('substrate--closed');
 
-        const closeButton = popup.querySelector('.popup__btn--close');
         handleRegistrationSelect();
 
+        const loginLink = popup.querySelector('.auth-modal__link-area');
+        const closeButton = popup.querySelector('.popup__btn--close');
+
         closeButton.addEventListener('click', handleCloseSignForms);
+        loginLink.addEventListener('click', () => {
+            changeLoginAndRegForms(e, 'registration')
+        });
 
         for(let i = 0; i < signIn.length; i++) {
             signIn[i].removeEventListener('click', handleOpenSignIn);
@@ -119,6 +135,12 @@
 //SIGN UP AND SING IN POPUP END
 
 //SELECT START
+    function clearActiveItems(array) {
+        for(let i = 0; i < array.length; i++){
+            array[i].classList.remove('auth-modal__pseudo-select-item--active')
+        }
+    }
+
     function handleRegistrationSelect() {
         const selectBtn = document.querySelector('.auth-modal__field--pseudo-select');
         const itemsList = document.querySelector('.auth-modal__pseudo-select-block');
@@ -132,14 +154,16 @@
             selectBtn.setAttribute('data-state', btnState);
         });
 
-        itemsList.addEventListener('click', () => {
-            const item = event.target;
+        itemsList.addEventListener('click', (e) => {
+            const item = e.target;
             let value = '';
             let text = '';
             if(item.hasAttribute('data-value')) {
                 value = item.getAttribute('data-value');
                 text = item.innerHTML
             }
+            clearActiveItems(itemsList.children);
+            item.classList.add('auth-modal__pseudo-select-item--active');
             selectBtn.innerHTML = text;
             itemsList.classList.toggle(token);
             btnState = itemsList.classList.contains(token) ? 'close' : 'open';
@@ -149,4 +173,39 @@
         });
     }
 //SELECT END
+
+    function changeLoginAndRegForms(e, form){
+        switch (form) {
+            case 'registration':
+                handleCloseSignForms();
+                handleOpenSignIn();
+                break;
+            case 'login':
+                handleCloseSignForms();
+                handleOpenSignUp();
+                break;
+        }
+    }
+
+    function openRequestPasswordForm(e) {
+        handleCloseSignForms();
+
+        const forgotPasswordTemplate = document.querySelector('#forgotPassword');
+        const forgotPasswordNode = forgotPasswordTemplate.content.querySelector('.auth-modal');
+        const forgotPasswordForm = forgotPasswordNode.cloneNode(true);
+
+        if(popup.childNodes[3]) {
+            popup.removeChild(popup.childNodes[3])
+        }
+
+        popup.appendChild(forgotPasswordForm);
+        mainContent.appendChild(popup);
+
+        const closeButton = popup.querySelector('.popup__btn--close');
+
+        body.style.overflow = 'hidden';
+        substrate.classList.remove('substrate--closed');
+
+        closeButton.addEventListener('click', handleCloseSignForms);
+    }
 })();

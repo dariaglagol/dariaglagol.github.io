@@ -977,6 +977,7 @@
     </template>
     <template id="registrationStart">
       <div class="auth-modal">
+        <script src="./js/validation.js" defer></script>
         <h3 class="auth-modal__header">Регистрация</h3>
         <div class="auth-modal__social-links">
           <a class="auth-modal__registration-link auth-modal__registration-link--fb">Facebook</a>
@@ -1002,7 +1003,6 @@
             <input class="auth-modal__field"
                    name="lastName"
                    type="text"
-                   pattern=""
                    value=""
                    id="userLastName"
                    maxlength="70"
@@ -1017,7 +1017,6 @@
             <input class="auth-modal__field"
                    name="firstName"
                    type="text"
-                   pattern=""
                    value=""
                    id="userFirstName"
                    maxlength="70"
@@ -1028,14 +1027,15 @@
               <p class="auth-modal__error auth-modal__error--invalid-firstName">Введите имя</p>
             </template>
           </fieldset>
+<!--          pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"-->
           <fieldset class="auth-modal__block">
             <input class="auth-modal__field"
                    name="phone"
                    type="text"
                    id="userPhone"
                    value=""
-                   minlength="18"
-                   maxlength="19"
+                   minlength="10"
+                   maxlength="12"
                    autocomplete="off"
                    required
             />
@@ -1051,6 +1051,8 @@
                    type="password"
                    id="userPassword"
                    value=""
+                   minlength="6"
+                   maxlength="16"
                    autocomplete="off"
                    required
             />
@@ -1077,8 +1079,8 @@
             </template>
           </div>
           <fieldset class="auth-modal__block auth-modal__block--hidden">
-            <input type="hidden" value="true" name="acceptance" class="auth-modal__field"/>
-            <input type="hidden" value="" name="traffic-selection" class="auth-modal__field auth-modal__field--select"/>
+            <input type="hidden" value="true" id="userAcceptance" name="acceptance" class="auth-modal__field"/>
+            <input type="hidden" value="" id="userTrafficSelection" name="trafficSelection" class="auth-modal__field auth-modal__field--select"/>
           </fieldset>
           <p class="auth-modal__confirmation">
               Нажимая кнопку «Зарегистрироваться», я соглашаюсь с <a target="_blank" href="/#/page/offer">офертой</a> и <a
@@ -1110,6 +1112,7 @@
     </template>
     <template id="login">
       <div class="auth-modal">
+        <script src="./js/validation.js" defer></script>
         <h3 class="auth-modal__header">Вход</h3>
         <div class="auth-modal__social-links">
           <a class="auth-modal__registration-link auth-modal__registration-link--fb">Facebook</a>
@@ -1153,20 +1156,44 @@
     </template>
     <template id="forgotPassword">
       <div class="auth-modal">
-        <h3>Восстановление пароля</h3>
+        <h3 class="auth-modal__header">Восстановление пароля</h3>
         <form name="forgotForm">
           <fieldset class="auth-modal__block">
-            <label for="forgotFormEmail">Электронная почта</label>
             <input class="auth-modal__field"
                    name="email"
                    value=""
                    type="email"
-                   id="forgotFormEmail"
-                   placeholder="Электронная почта"
-                   autocomplete="off"
+                   id="forgotEmailForm"
                    required/>
+            <label class="auth-modal__label" for="forgotEmailForm">Электронная почта</label>
           </fieldset>
-          <button type="submit" class="btn btn--auth btn-colored">Отправить</button>
+          <button type="submit" class="btn btn--auth btn--colored">Отправить</button>
+        </form>
+      </div>
+    </template>
+    <template id="restorePassword">
+      <div class="auth-modal">
+        <h3 class="auth-modal__header">Изменить пароль</h3>
+        <form name="restorePasswordForm">
+          <fieldset class="auth-modal__block">
+            <input class="auth-modal__field"
+                   name="email"
+                   value=""
+                   type="email"
+                   id="restorePasswordInput"
+                   required/>
+            <label class="auth-modal__label" for="restorePasswordInput">Придумайте пароль</label>
+          </fieldset>
+          <fieldset class="auth-modal__block">
+            <input class="auth-modal__field"
+                   name="email"
+                   value=""
+                   type="email"
+                   id="repeatRestorePasswordInput"
+                   required/>
+            <label class="auth-modal__label" for="repeatRestorePasswordInput">Повторите пароль</label>
+          </fieldset>
+          <button type="submit" class="btn btn--auth btn--colored">Отправить</button>
         </form>
       </div>
     </template>
@@ -1178,7 +1205,14 @@
         </p>
       </div>
     </template>
+    <template id="userLogged">
+      <div class="user-menu__desktop">
+        <a class="user-menu__link">UserName</a>
+        <a class="user-menu__link">Выйти</a>
+      </div>
+    </template>
     <script src="./js/svgxuse.min.js" defer></script>
+    <script src="./js/checkUserState.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/popups.js"></script>
     <script src="./js/sliders.js"></script>

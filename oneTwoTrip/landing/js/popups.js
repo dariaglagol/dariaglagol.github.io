@@ -1,5 +1,5 @@
 (function(){
-    const yieldContainer = document.querySelector('.yield__price-list');
+    const yieldContainer = document.querySelector('.yield__price-list-wrapper');
     const popupNode = document.querySelector('#popup').content.querySelector('.popup-wrapper');
     const aviaNode = document.querySelector('#yield-avia').content;
     const railwaysNode = document.querySelector('#yield-railways').content;
@@ -40,7 +40,9 @@
 
             popup.appendChild(verticalsMap[itemId]);
 
-            sliderMap['yield__price-list-wrapper'].appendChild(popup);
+            popup.classList.add('popup-wrapper--yield-popup');
+
+            yieldContainer.appendChild(popup);
 
             const closeMenuBtn = popup.querySelector('.popup__btn--close');
             closeMenuBtn.addEventListener('click', handleCloseVerticalPopups);
@@ -56,7 +58,7 @@
             }
 
             popup.appendChild(verticalsMap['certificate']);
-            sliderMap['yield__price-list-wrapper'].appendChild(popup);
+            yieldContainer.appendChild(popup);
             const closeMenuBtn = popup.querySelector('.popup__btn--close');
             closeMenuBtn.addEventListener('click', handleCloseVerticalPopups);
         }
@@ -70,7 +72,7 @@
         substrate.classList.remove('substrate--in-popup');
         body.style.overflow = 'auto';
         closeMenuBtn.removeEventListener('click', handleCloseVerticalPopups);
-        sliderContainersList['yield__price-list-wrapper'].addEventListener('click', handleOpenVerticalPopups);
+        yieldContainer.addEventListener('click', handleOpenVerticalPopups);
         popup.remove();
     }
 
