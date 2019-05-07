@@ -125,6 +125,7 @@
 [data-wl-vertical='avia-serp'] .balance-in-head,
 [data-wl-vertical='hotels-serp'] .balance-in-head,
 [data-wl-vertical='railways-serp'] .balance-in-head {
+    position: absolute;
     font-size: 16px;
     line-height: 20px;
 }
@@ -240,4 +241,8 @@
 [data-wl-vertical='hotels-serp'] .ottwl-header__auth-dialog-btn svg path,
 [data-wl-vertical='railways-serp'] .ottwl-header__auth-dialog-btn svg path {
     fill: #ffffff;
+}
+
+.ottwl-header .ottwl-header__block {
+    position: relative;
 }
