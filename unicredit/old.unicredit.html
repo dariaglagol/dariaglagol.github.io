@@ -1,0 +1,291 @@
+<style type="text/css">
+  .unicredit-footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1054px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .unicredit-footer-container .left-part,
+  .unicredit-footer-container .right-part {
+    position: relative;
+  }
+
+  .unicredit-footer-container .left-part {
+    width: calc(100% - 300px);
+    min-width: 300px;
+  }
+
+  .unicredit-footer-container .right-part {
+    width: 300px;
+  }
+
+  .unicredit-footer-container .left-part .support-panel-block {
+    max-width: 300px;
+  }
+
+  .unicredit-footer-container .right-part .ott-support-txt {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+
+  .unicredit-footer-container .right-part .ott-support-txt p {
+    display: inline-block;
+    max-width: 225px;
+    margin: 7px 0 0 15px;
+    text-align: center;
+  }
+
+  .unicredit-footer-container .left-part .unicredit-links {
+    max-width: 700px;
+    text-align: left;
+  }
+
+  .unicredit-footer-container .left-part .ott-links {
+    margin-top: 40px;
+  }
+
+  .unicredit-footer-container .social-nav {
+    display: flex;
+    width: 100%;
+    vertical-align: middle;
+    align-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-flow: row wrap;
+  }
+
+  .unicredit-footer-container .social-nav a {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    opacity: 1;
+    transition: opacity .3s;
+  }
+
+  .unicredit-footer-container .social-nav a:last-child {
+    margin-right: 0;
+  }
+
+  .unicredit-footer-container .social-nav a:hover {
+    opacity: .8;
+  }
+
+  .unicredit-footer-container .social-nav a svg {
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: normal;
+    font-weight: normal;
+    font-size: 13px;
+  }
+
+  .unicredit-footer-container .text-nav {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .unicredit-footer-container .text-nav a {
+    display: inline-block;
+    color: #20A8E0;
+    margin: 12px 17px 0 0;
+    font-size: 16px;
+    font-weight: normal;
+    white-space: nowrap;
+    text-decoration: none;
+    outline: none;
+  }
+
+  .unicredit-footer-container .text-nav a:last-child {
+    margin-right: 0;
+  }
+
+  .unicredit-footer-container .text-nav a:hover {
+    color: #0a9ad6;
+  }
+
+  .unicredit-footer-container .legal-nav a {
+    display: block;
+    font-size: 15px;
+  }
+
+  .unicredit-footer-container .support-telephone {
+    display: block;
+    color: #000000;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: normal;
+    text-decoration: none;
+    outline: none;
+  }
+
+  .unicredit-footer-container .social-nav a,
+  .unicredit-footer-container .text-nav a,
+  .unicredit-footer-container .support-telephone:hover,
+  .unicredit-footer-container .support-telephone:focus,
+  .unicredit-footer-container .support-telephone:active {
+    text-decoration: none;
+    outline: none;
+  }
+
+  @media (max-width: 629px) {
+    .unicredit-footer-container .right-part {
+      padding-top: 10px;
+      margin: auto auto;
+    }
+    .unicredit-footer-container .left-part .unicredit-links .text-nav a {
+      display: block;
+    }
+  }
+
+  @media (min-width: 630px) and (max-width: 800px) {
+    .unicredit-footer-container .left-part .unicredit-links .text-nav a {
+      display: block;
+    }
+    .unicredit-footer-container .support-telephone {
+      font-size: 24px;
+    }
+  }
+</style>
+
+<div class="unicredit-footer-container">
+  <div class="left-part">
+    <div class="support-panel-block">
+      <nav class="social-nav">
+        <a target="_blank" title="Помощь в VK" href="https://vk.com/im?sel=-24421945" data-locator="vkLink">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#55759F" cx="18" cy="18" r="18"></circle>
+              <path d="M26.152 18.302s3.11-4.388 3.42-5.83c.102-.515-.124-.803-.66-.803h-2.698c-.618 0-.845.267-1.03.658 0 0-1.46 3.11-3.234 5.067-.57.634-.86.824-1.174.824-.254 0-.37-.212-.37-.784V12.43c0-.7-.083-.905-.66-.905H15.42c-.33 0-.535.19-.535.453 0 .66 1.01.808 1.01 2.595v3.687c0 .742-.042 1.03-.392 1.03-.927 0-3.13-3.192-4.367-6.818-.248-.74-.515-.947-1.216-.947H7.222c-.39 0-.68.267-.68.66 0 .72.845 4.057 4.16 8.527 2.226 3.007 5.15 4.634 7.787 4.634 1.606 0 1.997-.267 1.997-.947V22.09c0-.577.227-.824.557-.824.37 0 1.025.12 2.554 1.627 1.813 1.73 1.936 2.45 2.925 2.45h3.028c.31 0 .598-.143.598-.658 0-.68-.886-1.895-2.245-3.337-.556-.74-1.463-1.545-1.75-1.915-.413-.433-.29-.68 0-1.133" fill="#FFF"></path>
+            </g>
+          </svg>
+        </a>
+
+        <a target="_blank" title="Помощь в Telegram" href="tg://resolve?domain=onetwotrip_support_bot" data-locator="telegramLink">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#4896D0" cx="18" cy="18" r="18"></circle>
+              <g fill-rule="nonzero">
+                <path d="M13.714 25.613c-.625 0-.518-.236-.734-.833l-1.837-6.07 14.143-8.42-11.572 15.323z" fill="#D4D2D2"></path>
+                <path d="M13.714 25.548c.482 0 .695-.222.965-.484l2.57-2.51-3.208-1.94-.328 4.934z" fill="#9E9E9E"></path>
+                <path d="M14.216 20.65l7.772 5.763c.887.49 1.527.237 1.748-.826L26.9 10.625c.324-1.304-.495-1.895-1.344-1.508L6.98 16.307c-1.27.51-1.26 1.22-.232 1.536l4.767 1.493 11.037-6.988c.52-.317 1-.147.607.203l-8.944 8.1z" fill="#FFF"></path>
+              </g>
+            </g>
+          </svg>
+        </a>
+
+        <a target="_blank" title="Помощь в Facebook Messenger" href="https://www.facebook.com/messages/t/175064085850585" data-locator="facebookLink">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#3884F7" cx="18" cy="18" r="18"></circle>
+              <path d="M18.05 7.49C11.95 7.49 7 12.12 7 17.826c0 3.247 1.6 6.144 4.106 8.038v3.955l3.77-2.092c1.006.282 2.072.433 3.175.433 6.104 0 11.052-4.628 11.052-10.335 0-5.707-4.948-10.334-11.05-10.334zm1.165 13.86l-2.858-2.97-5.505 3.043 6.035-6.404 2.858 2.97 5.505-3.045-6.035 6.404z" fill-rule="nonzero" fill="#FFF"></path>
+            </g>
+          </svg>
+        </a>
+
+        <a target="_blank" title="Помощь в Viber" href="http://chats.viber.com/onetwotrip" data-locator="viberLink">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#755499" cx="18" cy="18" r="18"></circle>
+              <path d="M22.577 27.76c-.197-.054-.585-.114-.935-.264-6.134-2.642-10.59-6.97-13.123-13.187-.85-2.085.037-3.845 2.176-4.564.384-.13.76-.138 1.138 0 .913.336 3.224 3.517 3.276 4.47.04.73-.457 1.124-.95 1.458-.93.632-.934 1.433-.537 2.326.9 2.018 2.432 3.406 4.418 4.306.722.328 1.41.295 1.903-.45.876-1.328 1.95-1.263 3.125-.44.59.415 1.187.82 1.747 1.27.76.612 1.722 1.122 1.268 2.407-.473 1.336-2.11 2.68-3.506 2.667zm-4.51-18.348c4.308.145 8.017 4.09 7.964 8.344-.004.417.146 1.036-.476 1.024-.595-.012-.44-.64-.492-1.057-.572-4.517-2.64-6.65-7.125-7.34-.372-.056-.938.025-.91-.467.042-.728.715-.457 1.04-.504zm5.753 7.582c-.042.312.14.846-.365.923-.68.103-.548-.52-.615-.92-.456-2.748-1.42-3.756-4.19-4.375-.408-.092-1.043-.028-.937-.656.1-.6.67-.395 1.1-.343 2.77.332 5.03 2.733 5.007 5.37zm-2.105-.5c.013.347-.025.714-.436.763-.298.035-.494-.214-.524-.522-.114-1.133-.712-1.803-1.848-1.985-.34-.055-.675-.164-.516-.624.106-.308.39-.34.677-.346 1.226-.03 2.665 1.44 2.645 2.714z" fill-rule="nonzero" fill="#FFF"></path>
+            </g>
+          </svg>
+        </a>
+
+        <a target="_blank" title="Помощь в Skype" href="skype:services.ott" data-locator="skype">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+            <g fill="none" fill-rule="evenodd">
+              <circle fill="#4AA8EA" cx="18" cy="18" r="18"></circle>
+              <path d="M27.38 19.482c.075-.483.115-.978.115-1.482 0-5.244-4.25-9.495-9.495-9.495-.503 0-1 .04-1.482.117-.874-.54-1.907-.854-3.013-.854-3.17 0-5.738 2.568-5.738 5.737 0 1.106.314 2.137.855 3.014-.075.483-.116.975-.116 1.48 0 5.245 4.25 9.494 9.494 9.494.503 0 1-.04 1.482-.115.875.54 1.906.853 3.012.853 3.17 0 5.74-2.57 5.74-5.738 0-1.106-.314-2.137-.855-3.013zm-4.872 2.836c-.402.58-.992 1.03-1.763 1.355-.772.326-1.686.488-2.74.488-1.264 0-2.31-.22-3.136-.666-.587-.32-1.063-.75-1.43-1.284-.366-.536-.552-1.06-.552-1.57 0-.303.115-.565.34-.78.225-.214.517-.322.86-.322.282 0 .524.085.72.253.197.17.36.413.495.736.16.373.335.685.52.934.186.247.445.452.782.613.333.16.776.242 1.33.242.76 0 1.372-.165 1.84-.488.473-.327.7-.725.7-1.205 0-.383-.123-.687-.373-.924-.253-.24-.58-.424-.984-.55-.407-.13-.953-.267-1.637-.41-.918-.202-1.686-.435-2.308-.703-.623-.27-1.12-.637-1.487-1.1-.37-.47-.553-1.054-.553-1.744 0-.658.194-1.247.583-1.76.388-.513.95-.907 1.682-1.18.73-.274 1.59-.41 2.573-.41.787 0 1.468.09 2.044.27.575.183 1.054.424 1.437.726.38.302.66.62.84.954.176.335.265.662.265.98 0 .297-.115.566-.34.802-.223.236-.51.357-.844.356-.3 0-.538-.07-.702-.217-.16-.142-.328-.37-.51-.685-.23-.442-.504-.785-.824-1.03-.31-.243-.825-.368-1.54-.367-.66 0-1.19.135-1.59.4-.4.268-.593.58-.594.945 0 .228.067.42.2.586.133.165.32.31.56.43.24.125.485.22.73.29.25.07.662.17 1.236.306.72.155 1.37.328 1.957.517.585.19 1.084.418 1.496.69.415.273.74.62.972 1.037.233.42.35.93.35 1.534 0 .725-.2 1.377-.604 1.954z" fill="#FFF"></path>
+            </g>
+          </svg>
+        </a>
+
+        <!--<a target="_blank" title="Помощь в WhatsApp" href="tel:+7-926-684-1926" data-locator="whatsAppLink">-->
+        <!--    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">-->
+        <!--        <g fill="none" fill-rule="evenodd">-->
+        <!--            <circle fill="#65CF72" cx="18" cy="18" r="18"></circle>-->
+        <!--            <path d="M23.65 19.584c-.264-.13-1.567-.76-1.81-.846-.243-.086-.42-.13-.597.13-.176.26-.684.847-.84 1.02-.153.174-.308.195-.573.065-.265-.13-1.12-.405-2.13-1.29-.79-.69-1.32-1.54-1.476-1.802-.154-.26-.016-.4.117-.53.12-.116.266-.303.398-.455.133-.152.177-.26.265-.434.088-.172.044-.324-.022-.454-.065-.13-.595-1.41-.816-1.93-.215-.508-.434-.44-.596-.447-.155-.01-.332-.01-.508-.01-.177 0-.464.065-.707.325-.243.26-.928.89-.928 2.17 0 1.28.95 2.515 1.082 2.69.133.173 1.87 2.8 4.528 3.925.632.268 1.126.428 1.51.548.636.198 1.214.17 1.67.103.51-.074 1.568-.628 1.79-1.235.22-.608.22-1.13.154-1.237-.068-.108-.244-.173-.51-.304zm-4.835 6.478h-.004c-1.58 0-3.132-.417-4.486-1.205l-.322-.188-3.336.858.89-3.192-.21-.327C10.465 20.63 10 19.04 10 17.405c0-4.77 3.956-8.648 8.818-8.648 2.355 0 4.57.9 6.233 2.536 1.666 1.635 2.582 3.808 2.58 6.12 0 4.768-3.956 8.648-8.815 8.648zm7.503-16.01C24.316 8.085 21.652 7.002 18.815 7 12.968 7 8.21 11.668 8.208 17.405c0 1.834.487 3.625 1.416 5.203L8.12 28l5.622-1.447c1.55.83 3.293 1.266 5.07 1.267h.003c5.846 0 10.605-4.67 10.607-10.406 0-2.78-1.1-5.395-3.104-7.362z" fill="#FFF"></path>-->
+        <!--        </g>-->
+        <!--    </svg>-->
+        <!--</a>-->
+
+        <!--<a target="_blank" title="Онлайн-звонок" href="" data-locator="onlineCall">-->
+        <!--    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">-->
+        <!--        <g fill="none" fill-rule="evenodd">-->
+        <!--            <circle fill="#3FBE60" cx="18" cy="18" r="18"></circle>-->
+        <!--            <path d="M7.2 7.2h21.6v21.6H7.2"></path>-->
+        <!--            <path d="M13.158 16.91c1.296 2.548 3.384 4.627 5.93 5.932l1.98-1.98c.244-.243.604-.324.92-.216 1.007.333 2.096.513 3.212.513.495 0 .9.404.9.9v3.14c0 .495-.405.9-.9.9-8.45 0-15.3-6.85-15.3-15.3 0-.495.405-.9.9-.9h3.15c.495 0 .9.405.9.9 0 1.125.18 2.205.513 3.213.1.315.027.666-.225.918l-1.98 1.98z" fill="#FFF"></path>-->
+        <!--        </g>-->
+        <!--    </svg>-->
+        <!--</a>-->
+      </nav>
+    </div>
+
+    <div class="unicredit-links">
+      <nav class="text-nav">
+        <a target="_blank" href="https://air.unicredit.ru/">
+          Карта и преимущества
+        </a>
+
+        <a target="_blank" href="">
+          Правила пользования сайтом
+        </a>
+
+        <a target="_blank" href="https://www.unicreditbank.ru/content/dam/cee2020-pws-ru/cards/Files/rules_loyalty_Bez_granits.pdf">
+          Программа лояльности
+        </a><a target="_blank" href="">FAQ</a>
+      </nav>
+    </div>
+
+    <div class="ott-links">
+      <nav class="text-nav legal-nav">
+        <a target="_blank" href="https://www.whitetravel.ru/docs/ru/WhiteTravel_End-user%20license%20agreement.pdf">
+          Пользовательское соглашение
+        </a>
+
+        <a target="_blank" href="https://www.whitetravel.ru/docs/ru/WhiteTravel_Processing%20of%20Personal%20Data%20agreement.pdf">
+          Согласие на обработку персональных данных
+        </a>
+
+        <a target="_blank" href="https://www.whitetravel.ru/docs/ru/WhiteTravel_Privacy%20Policy.pdf">
+          Политика конфиденциальности
+        </a>
+
+        <a target="_blank" href="https://www.whitetravel.ru/docs/ru/Cookies_Policy.pdf">
+          Политика использования cookie-файлов
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="right-part">
+    <a target="_blank" title="Помощь по телефону 24/7" href="tel:+74956468362" class="support-telephone">
+      +7 (495) 646-83-62
+    </a>
+
+    <a target="_blank" title="Помощь по телефону 24/7" href="tel:+74959816881" class="support-telephone">
+      +7 (495) 981-68-81
+    </a>
+
+    <div class="ott-support-txt">
+      <a target="_blank" href="https://www.onetwotrip.com">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+          <g fill="none">
+            <path fill="#212121" d="M12.582 9.584C13.025 4.22 17.52.002 23 .002c5.48 0 9.975 4.217 10.418 9.582h7.506A5.081 5.081 0 0 1 46 14.667v26.25A5.085 5.085 0 0 1 40.924 46H5.076A5.081 5.081 0 0 1 0 40.917v-26.25a5.085 5.085 0 0 1 5.076-5.083h7.506zm5.617 0h9.602a4.88 4.88 0 0 0-9.602 0z"></path><path fill="#FFF" d="M29.684 8.23a7.041 7.041 0 0 0-13.616.993.628.628 0 0 1-1.235-.219 8.296 8.296 0 0 1 16.066-1.088l.965-.25-.853 3.047-2.213-2.254.886-.229zM8.4 27.667v15.465H5.566V27.667H2.553v-2.558h8.885v2.558H8.4zm11.403 15.467l-2.353-7.392h-1.596v7.392H13.02V25.11h4.557c3.29 0 4.6 1.594 4.6 5.315 0 2.23-.46 3.823-2.1 4.709l2.693 8.001h-2.967zm-2.201-15.467h-1.748v5.52H17.6c1.518 0 1.745-1.265 1.745-2.76 0-1.495-.23-2.76-1.745-2.76h.002zm6.895-2.558h2.834v18.023h-2.834V25.109zm9.693 10.987h-1.696v7.038H29.66V25.11h4.53c3.267 0 4.633 1.695 4.633 5.467 0 3.646-1.215 5.52-4.633 5.52zm.05-8.43h-1.746v5.873h1.746c1.518 0 1.746-1.341 1.746-2.938 0-1.596-.23-2.937-1.746-2.937v.003zm7.887 15.574a1.762 1.762 0 0 1-1.771-1.771 1.773 1.773 0 1 1 3.544 0 1.762 1.762 0 0 1-1.773 1.771zm-1.341-18.124h2.684v12.96h-2.684v-12.96zM6.684 21.528a2.259 2.259 0 0 1-1.84.796 2.256 2.256 0 0 1-1.84-.796c-.704-.796-.69-2.178-.69-4.037 0-1.858-.014-3.24.69-4.036a2.256 2.256 0 0 1 1.84-.796 2.259 2.259 0 0 1 1.84.796c.704.798.69 2.178.69 4.036 0 1.859.014 3.241-.69 4.037zm-1.116-7.171a.784.784 0 0 0-.717-.36.761.761 0 0 0-.711.36c-.278.46-.331 1.407-.331 3.134 0 1.728.06 2.682.331 3.133.15.242.42.38.704.359a.784.784 0 0 0 .717-.359c.279-.46.32-1.407.32-3.135 0-1.727-.039-2.682-.32-3.135l.007.003zm6.988 7.861l-2.231-5.617v5.617H8.837v-9.455h1.329l2.217 5.616v-5.616h1.488v9.455h-1.315zm2.916 0v-9.455h3.975v1.34H16.96v2.682h2.142v1.344H16.96v2.748h2.486v1.341h-3.974zm10.575-8.114v8.114H24.56v-8.114h-1.58v-1.341h4.662v1.34h-1.593zm10.05 8.114H34.54l-1.354-7.185-1.341 7.185H30.29l-1.792-9.455h1.633l.93 7.171 1.301-7.171h1.647l1.316 7.171.915-7.171h1.633l-1.778 9.455zm6.895-.69a2.505 2.505 0 0 1-3.667 0c-.703-.796-.69-2.178-.69-4.037 0-1.858-.013-3.24.69-4.036a2.507 2.507 0 0 1 3.667 0c.703.796.69 2.178.69 4.036 0 1.859.013 3.241-.69 4.037zm-1.116-7.171a.784.784 0 0 0-.706-.36.761.761 0 0 0-.704.36c-.278.46-.331 1.407-.331 3.134 0 1.728.053 2.682.331 3.135.15.241.421.378.704.357a.784.784 0 0 0 .718-.359c.278-.46.32-1.407.32-3.135 0-1.727-.04-2.682-.32-3.135l-.012.003z"></path>
+          </g>
+        </svg>
+      </a>
+
+      <p>
+        Горячая линия по авиабилетам, ж/д билетам и отелям
+      </p>
+    </div>
+  </div>
+</div>
