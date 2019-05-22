@@ -130,6 +130,8 @@
     left: 0;
     font-size: 16px;
     line-height: 20px;
+    color: #ffffff;
+    opacity: 0.8;
 }
 
 [data-wl-vertical='avia-serp'] .balance-txt-prefix,

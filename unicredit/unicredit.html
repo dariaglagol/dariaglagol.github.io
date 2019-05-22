@@ -1,21 +1,16 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body style="margin: 0">
-  <style>
+ <style>
     @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
     .footer {
-      box-sizing: border-box;
       max-width: 1280px;
       margin: 0 auto;
       padding: 43px 16px 37px;
+    }
+
+    .footer *,
+    .footer *::before,
+    .footer *::after {
+      box-sizing: border-box;
     }
 
     .footer__column-wrapper {
@@ -39,24 +34,26 @@
 
     .footer__column--number {
       order: 1;
-      flex: 0 0 70%;
+      flex: 1 0 50%;
     }
 
     .footer__column--communication {
-      margin-top: 78px;
-      /*УДАЛИ ЭТО НЕ ЗАБУДЬ*/
+      order: 4;
+      flex: 0 0 100%;
+    }
+
+    .footer__column--support {
       order: 3;
       flex: 0 0 100%;
     }
 
     .footer__column-wrapper,
     .footer__help-links {
-      margin-bottom: 20px;
+      margin-bottom: 14px;
     }
 
     .footer__column {
-      /*flex: 0 0 100%;*/
-      margin-bottom: 20px;
+      margin-bottom: 14px;
     }
 
     .footer__column-header {
@@ -72,6 +69,7 @@
 
     .footer__phone-wrap {
       margin: 0;
+      flex-direction: column;
       display: flex;
       flex-wrap: wrap;
     }
@@ -96,12 +94,11 @@
 
     .footer__column--communication div {
       display: flex;
-      justify-content: space-between;
     }
 
     .footer__link {
       display: block;
-      margin-right: 8px;
+      margin-right: 24px;
     }
 
     .footer__link--vk::before {
@@ -128,23 +125,42 @@
       height: 37px;
     }
 
-    .footer__help-links a {
-      margin-right: 20px;
-      font-family: 'Roboto', Helvetica, sans-serif;
-      font-size: 13px;
-      letter-spacing: 0.4px;
-      color: #01abfb;
-      text-decoration: none;
-      text-transform: uppercase;
+    .footer__link--skype::before {
+      content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><g fill="none" fill-rule="evenodd"><circle fill="%234AA8EA" cx="18" cy="18" r="18"/><path d="M27.38 19.482a9.494 9.494 0 0 0-10.862-10.86 5.737 5.737 0 0 0-7.896 7.897 9.493 9.493 0 0 0 10.86 10.859 5.74 5.74 0 0 0 7.897-7.898zm-4.872 2.836c-.402.58-.992 1.03-1.763 1.355-.772.326-1.686.488-2.74.488-1.264 0-2.31-.22-3.136-.666a4.078 4.078 0 0 1-1.43-1.284c-.366-.536-.552-1.06-.552-1.57 0-.303.115-.565.34-.78.225-.214.517-.322.86-.322.282 0 .524.085.72.253.197.17.36.413.495.736.16.373.335.685.52.934.186.247.445.452.782.613.333.16.776.242 1.33.242.76 0 1.372-.165 1.84-.488.473-.327.7-.725.7-1.205 0-.383-.123-.687-.373-.924a2.472 2.472 0 0 0-.984-.55c-.407-.13-.953-.267-1.637-.41-.918-.202-1.686-.435-2.308-.703-.623-.27-1.12-.637-1.487-1.1-.37-.47-.553-1.054-.553-1.744 0-.658.194-1.247.583-1.76.388-.513.95-.907 1.682-1.18.73-.274 1.59-.41 2.573-.41.787 0 1.468.09 2.044.27.575.183 1.054.424 1.437.726.38.302.66.62.84.954.176.335.265.662.265.98 0 .297-.115.566-.34.802-.223.236-.51.357-.844.356-.3 0-.538-.07-.702-.217-.16-.142-.328-.37-.51-.685-.23-.442-.504-.785-.824-1.03-.31-.243-.825-.368-1.54-.367-.66 0-1.19.135-1.59.4-.4.268-.593.58-.594.945 0 .228.067.42.2.586.133.165.32.31.56.43.24.125.485.22.73.29.25.07.662.17 1.236.306.72.155 1.37.328 1.957.517.585.19 1.084.418 1.496.69.415.273.74.62.972 1.037.233.42.35.93.35 1.534 0 .725-.2 1.377-.604 1.954z" fill="%23FFF"/></g></svg>');
+      width: 37px;
+      height: 37px;
     }
 
-    .footer__loyal-info {
-      margin: 0;
-      font-family: 'Roboto', Helvetica, sans-serif;
-      font-size: 13px;
-      line-height: 1.54;
-      color: #9e9e9e;
+    .footer__help-links {
+      display: flex;
+      flex-wrap: wrap;
     }
+
+    .footer__help-links a {
+      flex: 0 0 45%;
+      margin-bottom: 14px;
+      font-family: 'Roboto', Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.4px;
+      color: #010000;
+      text-decoration: none;
+    }
+
+    .footer__help-links a:nth-child(odd) {
+      padding-right: 31px;
+    }
+
+    .footer__help-links a:nth-child(even) {
+      flex-basis: 54%;
+    }
+
+    .footer__help-links a:nth-child(7),
+    .footer__help-links a:last-child {
+      flex-basis: 100%;
+      padding-right: 62%;
+    }
+
 
     @media (min-width: 660px) {
       .footer {
@@ -152,16 +168,21 @@
       }
 
       .footer__column--logo {
-        order: 0;
-        text-align: right;
+        order: 3;
+        flex-basis: 33%;
       }
 
       .footer__column--number {
-        order: 0;
+        flex-basis: 33%;
+        order: 1;
+      }
+
+      .footer__column--support {
+        order: 2;
       }
 
       .footer__column--communication {
-        order: 0;
+        order: 4;
       }
 
       .footer__column {
@@ -170,26 +191,77 @@
     }
 
     @media (min-width: 1024px) {
+      .footer__column {
+        flex-basis: 29%;
+      }
+
+      .footer__column-header {
+        margin-bottom: 11px;
+      }
+
       .footer__column-wrapper {
         flex-wrap: nowrap;
       }
 
-      .footer {
-        padding: 32px 130px 46px;
+      .footer__column--logo {
+        order: 4;
+        flex: 1 0 400px;
+        text-align: right;
       }
 
-      .footer__column {
-        flex: 0 1 242px;
+      .footer__column--communication {
+        order: 3;
+      }
+
+      .footer {
+        padding: 44px 103px 0;
       }
 
       .footer__column-wrapper,
       .footer__help-links {
-        margin-bottom: 32px;
+        margin-bottom: 39px;
       }
 
       .footer__column--number {
-        flex-basis: 400px;
+        flex-basis: 200px;
+        padding-right: 20px;
       }
+
+      .footer__column--support {
+        flex-basis: 160px;
+      }
+
+      .footer__help-links a {
+        font-size: 16px;
+        line-height: 1.33;
+        flex-basis: auto;
+        letter-spacing: -0.2px;
+        color: #01abfb;
+      }
+
+      .footer__help-links a:hover,
+      .footer__help-links a:active,
+      .footer__help-links a:focus {
+        color: #019dec;
+      }
+
+      .footer__help-links a:last-child,
+      .footer__help-links a:nth-child(7),
+      .footer__help-links a:nth-child(odd),
+      .footer__help-links a:nth-child(even) {
+        flex-basis: auto;
+        padding: 0 39px 0 0;
+        margin-right: 0;
+      }
+
+      .footer__link--card { order: 1; }
+      .footer__link--user-agreement { order: 6; }
+      .footer__link--miles {order: 3;}
+      .footer__link--sensitive-data { order: 4; }
+      .footer__link--loyalty { order: 2; }
+      .footer__link--cookie { order: 7; }
+      .footer__link--faq { order: 5; }
+      .footer__link--privacy-policy { order: 8;}
     }
   </style>
   <footer role="contentinfo" class="footer">
@@ -201,11 +273,21 @@
           <a href="tel:+74956468362">+7 495 646 83 62</a>
         </p>
       </section>
-      
+      <section class="footer__column footer__column--support">
+        <h4 class="footer__column-header">Онлайн звонок</h4>
+        <div>
+          <a title="Помощь в Skype" href="skype:services.ott" target="_blank"
+             class="footer__link footer__link--skype">
+            <span class="visibility-hidden">
+              OnetTwoTrip в Скайпе
+            </span>
+          </a>
+        </div>
+      </section>
       <section class="footer__column footer__column--communication">
         <h4 class="footer__column-header">Чат с оператором</h4>
         <div>
-          <a title="ВКонтакте диалоги" href="https://vk.com/im?sel=-24421945" target="_blank"
+          <a title="Помощь во Вконтакте" href="https://vk.com/im?sel=-24421945" target="_blank"
              class="footer__link footer__link--vk">
                               <span class="visibility-hidden">
                                   OnetTwoTrip Вконтакте
@@ -249,13 +331,46 @@
       </section>
     </div>
     <div class="footer__help-links">
-      <a href="https://support.onetwotrip.com/hc/ru" target="_blank">Помощь 24 часа</a>
-      <a href="https://support.onetwotrip.com/hc/ru/sections/201758669#208009765"
-         target="_blank">Конфиденциальность</a>
+      <a href="https://www.unicreditbank.ru/ru/personal/banking/pi-packages.html#%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B1%D0%B5%D0%B7%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%86"
+         target="_blank"
+         class="footer__link footer__link--card">
+        Карта и преимущества
+      </a>
+      <a href="https://www.whitetravel.ru/docs/ru/WhiteTravel_End-user%20license%20agreement.pdf"
+         target="_blank"
+         class="footer__link footer__link--user-agreement">
+        Пользовательское соглашение
+      </a>
+      <a href="https://www.unicreditbank.ru/content/dam/cee2020-pws-ru/promo/rules/2019/ucb_rules_privetstvennye_mili.pdf"
+         target="_blank"
+         class="footer__link footer__link--miles">
+        Приветственные мили
+      </a>
+      <a href="https://www.whitetravel.ru/docs/ru/WhiteTravel_Processing%20of%20Personal%20Data%20agreement.pdf"
+         target="_blank"
+         class="footer__link footer__link--sensitive-data">
+        Согласие на обработку персональных данных
+      </a>
+      <a href="https://www.unicreditbank.ru/content/dam/cee2020-pws-ru/cards/Files/rules_loyalty_Bez_granits.pdf"
+         target="_blank" class="footer__link footer__link--loyalty">
+        Программа лояльности
+      </a>
+      <a href="https://www.whitetravel.ru/docs/ru/Cookies_Policy.pdf"
+         target="_blank"
+         class="footer__link footer__link--cookie">
+        Политика использования cookie-файлов
+      </a>
+      <a href="https://www.unicreditbank.ru/content/dam/cee2020-pws-ru/Other/promo/ucb_travel_faq.pdf"
+         target="_blank"
+         class="footer__link footer__link--faq">
+        Вопросы и ответы
+      </a>
+      <a href="https://www.whitetravel.ru/docs/ru/WhiteTravel_Privacy%20Policy.pdf"
+         target="_blank"
+         class="footer__link footer__link--privacy-policy">
+        Политика конфиденциальности
+      </a>
     </div>
-    <p class="footer__loyal-info">Сервис предоставлен компанией OneTwoTrip Travel Agency LLP</p>
   </footer>
-</body>
-</html>
 
 
