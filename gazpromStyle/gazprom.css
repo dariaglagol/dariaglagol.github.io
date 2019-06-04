@@ -19,6 +19,28 @@
     font-size: 14px;
 }
 
+.content-wrap .nav-bar-table td:nth-child(2) a {
+    font-size: 0 !important;
+}
+
+.content-wrap .nav-bar-table td:nth-child(2) a::before {
+    content: 'Мили';
+    line-height: 48px;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 0;
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .content-wrap .nav-bar-table td:nth-child(2) a::before {
+        color: #494949;
+        line-height: normal;
+        font-size: 14px;
+        font-weight: 900;
+        padding: 20px 0;
+    }
+}
 
 .bonuses th:nth-child(2) {
     font-size: 0;
@@ -237,19 +259,4 @@
     position: relative;
     color: #ffffff;
     opacity: 0.8;
-}
-
-@media (min-width: 768px ) {
-    .content-wrap .nav-bar-table td:nth-child(2) a {
-        font-size: 0 !important;
-    }
-
-    .content-wrap .nav-bar-table td:nth-child(2) a::before {
-        content: 'Мили';
-        color: #494949;
-        font-size: 15px;
-        font-weight: 900;
-        padding: 20px 0;
-        background-color: #fff;
-    }
 }
