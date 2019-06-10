@@ -253,3 +253,9 @@
 [data-wl-vertical='railways-serp'] .ottwl-header__auth-dialog-btn svg path {
     fill: #ffffff;
 }
+
+.ottwl-header .ottwl-header__block {
+    position: relative;
+    color: #ffffff;
+    opacity: 0.8;
+}
