@@ -198,11 +198,19 @@
     margin-bottom: 20px;
 }
 
+.mobile-menu-open .ottwl-header__block .logo::after {
+    display: none;
+}
+
 
 [data-wl-vertical='avia-serp'] .ottwl-header__block .logo .logo-image,
 [data-wl-vertical='hotels-serp'] .ottwl-header__block .logo .logo-image,
 [data-wl-vertical='railways-serp'] .ottwl-header__block .logo .logo-image {
     display: none;
+}
+
+.mobile-menu-open .ottwl-header__block .logo .logo-image {
+    display: block;
 }
 
 [data-wl-vertical='avia-serp'].ottSaasBody {
