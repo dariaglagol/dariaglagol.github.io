@@ -71,8 +71,7 @@
 }
 
 .text-item .balance-txt-postfix {
-    content: 'миль';
-    font-size: 11px;
+    font-size: 0;
 }
 
 .balance-txt-postfix::before {
