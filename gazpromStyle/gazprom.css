@@ -134,7 +134,8 @@
 
 [data-wl-vertical='avia-serp'] .balance-in-head,
 [data-wl-vertical='hotels-serp'] .balance-in-head,
-[data-wl-vertical='railways-serp'] .balance-in-head {
+[data-wl-vertical='railways-serp'] .balance-in-head,
+.balance-in-head {
     position: absolute;
     top: 23px;
     left: 0;
@@ -146,7 +147,8 @@
 
 [data-wl-vertical='avia-serp'] .balance-txt-prefix,
 [data-wl-vertical='hotels-serp'] .balance-txt-prefix,
-[data-wl-vertical='railways-serp'] .balance-txt-prefix {
+[data-wl-vertical='railways-serp'] .balance-txt-prefix,
+.balance-txt-prefix {
     display: none;
 }
 
