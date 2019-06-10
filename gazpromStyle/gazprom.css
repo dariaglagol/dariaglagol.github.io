@@ -71,12 +71,13 @@
 }
 
 .text-item .balance-txt-postfix {
-    font-size: 0;
+    content: 'миль';
+    font-size: 11px;
 }
 
 .balance-txt-postfix::before {
     content: 'миль';
-    font-size: 16px;
+    font-size: 11px;
 }
 
 .ottwl-header__block .logo-image {
@@ -153,9 +154,8 @@
 [data-wl-vertical='hotels-serp'] .lk-head-btn,
 [data-wl-vertical='railways-serp'] .lk-head-btn {
     position: relative;
-    padding-bottom: 0;
-    font-size: 16px;
     color: #ffffff;
+    opacity: 0.8;
     border-color: transparent;
 }
 
@@ -167,7 +167,6 @@
 [data-wl-vertical='railways-serp'] .lk-head-btn:focus {
     opacity: 1;
     border-color: transparent !important;
-    outline-offset: 2px;
 }
 
 [data-wl-vertical='avia-serp'] .lk-head-btn::before,
@@ -175,7 +174,7 @@
 [data-wl-vertical='railways-serp'] .lk-head-btn::before {
     content: url('data:image/svg+xml;utf8,<svg width="20" height="22" xmlns="http://www.w3.org/2000/svg"><path d="M17.542 16.837a4 4 0 0 1 1.958 3.44V22H.5v-1.724a4 4 0 0 1 1.957-3.439l3.801-2.256a2 2 0 0 0 .978-1.72v-.16c.845.505 1.782.8 2.764.8.982 0 1.918-.295 2.763-.8v.16a2 2 0 0 0 .978 1.72l3.801 2.256zM15 5.487c0 3.313-2.238 6.514-5 6.514S5 8.8 5 5.488C5 2.173 7.238 0 10 0s5 2.175 5 5.487z" fill="%23FFF" fill-rule="evenodd"/></svg>');
     width: 20px;
-    height: 25px;
+    height: 22px;
     position: absolute;
     transform: translateY(-50%);
     left: -10px;
@@ -253,10 +252,4 @@
 [data-wl-vertical='hotels-serp'] .ottwl-header__auth-dialog-btn svg path,
 [data-wl-vertical='railways-serp'] .ottwl-header__auth-dialog-btn svg path {
     fill: #ffffff;
-}
-
-.ottwl-header .ottwl-header__block {
-    position: relative;
-    color: #ffffff;
-    opacity: 0.8;
 }
