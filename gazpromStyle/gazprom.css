@@ -25,7 +25,7 @@
 
 .content-wrap .nav-bar-table td:nth-child(2) a::before {
     content: 'Мили';
-    line-height: 47px;
+    line-height: 48px;
     font-size: 11px;
     font-weight: 400;
     padding: 0;
