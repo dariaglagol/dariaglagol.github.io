@@ -267,3 +267,9 @@
     color: #ffffff;
     opacity: 0.8;
 }
+
+.mobile-menu-open .ottwl-header .ottwl-header__block{
+    position: static;
+    color: #333;
+    opacity: 1;
+}
