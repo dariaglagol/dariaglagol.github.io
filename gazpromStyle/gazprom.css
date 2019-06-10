@@ -77,7 +77,7 @@
 
 .balance-txt-postfix::before {
     content: 'миль';
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .ottwl-header__block .logo-image {
@@ -136,7 +136,7 @@
 [data-wl-vertical='hotels-serp'] .balance-in-head,
 [data-wl-vertical='railways-serp'] .balance-in-head {
     position: absolute;
-    top: 20px;
+    top: 23px;
     left: 0;
     font-size: 16px;
     line-height: 20px;
