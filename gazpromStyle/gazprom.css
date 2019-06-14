@@ -1,8 +1,8 @@
-.forms-tabs li:nth-of-type(3) a {
+.desktop-nav .forms-tabs li:nth-of-type(3) a {
     font-size: 0;
 }
 
-.forms-tabs li:nth-of-type(3) a::after {
+.desktop-nav .forms-tabs li:nth-of-type(3) a::after {
     content: 'Ж/д билеты';
     font-size: 14px;
     line-height: 17px;
@@ -25,12 +25,23 @@
 
 .content-wrap .nav-bar-table td:nth-child(2) a::before {
     content: 'Мили';
-    color: #494949;
-    font-size: 15px;
-    font-weight: 900;
-    padding: 20px 0;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 0;
     background-color: #fff;
-    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .content-wrap .nav-bar-table td:nth-child(2) a::before {
+        color: #494949;
+        line-height: normal;
+        font-size: 14px;
+        font-weight: 900;
+        padding: 20px 0;
+    }
 }
 
 .bonuses th:nth-child(2) {
@@ -61,9 +72,13 @@
     font-size: 0;
 }
 
+.text-item .balance-txt-postfix {
+    font-size: 0;
+}
+
 .balance-txt-postfix::before {
     content: 'миль';
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .ottwl-header__block .logo-image {
@@ -121,12 +136,25 @@
 [data-wl-vertical='avia-serp'] .balance-in-head,
 [data-wl-vertical='hotels-serp'] .balance-in-head,
 [data-wl-vertical='railways-serp'] .balance-in-head {
+    position: absolute;
+    top: 23px;
+    left: 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+[data-wl-vertical='avia-serp'] .balance-txt-prefix,
+[data-wl-vertical='hotels-serp'] .balance-txt-prefix,
+[data-wl-vertical='railways-serp'] .balance-txt-prefix {
     display: none;
 }
 
 [data-wl-vertical='avia-serp'] .lk-head-btn,
 [data-wl-vertical='hotels-serp'] .lk-head-btn,
 [data-wl-vertical='railways-serp'] .lk-head-btn {
+    position: relative;
     color: #ffffff;
     opacity: 0.8;
     border-color: transparent;
@@ -139,15 +167,8 @@
 [data-wl-vertical='railways-serp'] .lk-head-btn:hover,
 [data-wl-vertical='railways-serp'] .lk-head-btn:focus {
     opacity: 1;
-    border-color: transparent;
+    border-color: transparent !important;
 }
-
-[data-wl-vertical='avia-serp'] .lk-head-btn,
-[data-wl-vertical='hotels-serp'] .lk-head-btn,
-[data-wl-vertical='railways-serp'] .lk-head-btn {
-    position: relative;
-}
-
 
 [data-wl-vertical='avia-serp'] .lk-head-btn::before,
 [data-wl-vertical='hotels-serp'] .lk-head-btn::before,
@@ -178,11 +199,19 @@
     margin-bottom: 20px;
 }
 
+.mobile-menu-open .ottwl-header__block .logo::after {
+    display: none;
+}
+
 
 [data-wl-vertical='avia-serp'] .ottwl-header__block .logo .logo-image,
 [data-wl-vertical='hotels-serp'] .ottwl-header__block .logo .logo-image,
 [data-wl-vertical='railways-serp'] .ottwl-header__block .logo .logo-image {
     display: none;
+}
+
+.mobile-menu-open .ottwl-header__block .logo .logo-image {
+    display: block;
 }
 
 [data-wl-vertical='avia-serp'].ottSaasBody {
@@ -234,6 +263,14 @@
     fill: #ffffff;
 }
 
+.ottwl-header .ottwl-header__block {
+    position: relative;
+    color: #ffffff;
+    opacity: 0.8;
+}
 
-
-
+.mobile-menu-open .ottwl-header .ottwl-header__block{
+    position: static;
+    color: #333;
+    opacity: 1;
+}
