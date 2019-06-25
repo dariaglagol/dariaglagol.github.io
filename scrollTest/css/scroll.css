@@ -30,5 +30,6 @@
 }
 
 body {
-    scrollbar-color: rebeccapurple green;
+    scrollbar-color: red blue;
+    scrollbar-width: thin;
 }
