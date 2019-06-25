@@ -18,13 +18,17 @@
     background-color: #242323;
 }
 
-::-webkit-resizer{
+::-webkit-resizer {
     background-image: none;
     background-repeat: no-repeat;
     width: 6px;
     height: 0;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 6px;
+}
+
+body {
+    scrollbar-color: rebeccapurple green;
 }
