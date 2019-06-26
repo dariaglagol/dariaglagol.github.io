@@ -31,16 +31,16 @@
 
 html {
     scrollbar-color: #212121 transparent;
-    scrollbar-width: 6px;
+    scrollbar-width: thin;
     -ms-scrollbar-color: #212121 transparent;
-    -ms-scrollbar-width: 6px;
+    -ms-scrollbar-width: thin;
 }
 
 body {
     scrollbar-color: #212121 transparent;
-    scrollbar-width: 6px;
+    scrollbar-width: thin;
     -ms-scrollbar-color: #212121 transparent;
-    -ms-scrollbar-width: 6px;
+    -ms-scrollbar-width: thin;
 }
 
 .advantages-list {
