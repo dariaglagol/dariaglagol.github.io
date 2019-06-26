@@ -31,12 +31,21 @@
 
 html {
     scrollbar-color: red blue;
-    scrollbar-width: thin;
+    scrollbar-width: 6px;
     -ms-scrollbar-color: red blue;
-    -ms-scrollbar-width: thin;
+    -ms-scrollbar-width: 6px;
+}
+
+body {
+    scrollbar-color: red blue;
+    scrollbar-width: 6px;
+    -ms-scrollbar-color: red blue;
+    -ms-scrollbar-width: 6px;
 }
 
 .advantages-list {
     scrollbar-color: red blue;
-    scrollbar-width: thin;
+    scrollbar-width: 6px;
+    -ms-scrollbar-color: red blue;
+    -ms-scrollbar-width: 6px;
 }
