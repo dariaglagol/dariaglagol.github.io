@@ -34,6 +34,10 @@ html {
     scrollbar-width: thin;
     -ms-scrollbar-color: #212121 transparent;
     -ms-scrollbar-width: thin;
+
+    scrollbar-track-color: transparent;
+    scrollbar-base-color: #212121;
+    scrollbar-arrow-color: #fff;
 }
 
 body {
@@ -41,6 +45,10 @@ body {
     scrollbar-width: thin;
     -ms-scrollbar-color: #212121 transparent;
     -ms-scrollbar-width: thin;
+
+    scrollbar-track-color: transparent;
+    scrollbar-base-color: #212121;
+    scrollbar-arrow-color: #fff;
 }
 
 .advantages-list {
