@@ -32,6 +32,8 @@
 html {
     scrollbar-color: red blue;
     scrollbar-width: thin;
+    -ms-scrollbar-color: red blue;
+    -ms-scrollbar-width: thin;
 }
 
 .advantages-list {
