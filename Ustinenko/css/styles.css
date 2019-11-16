@@ -1,0 +1,280 @@
+/* playfair-display-regular - latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/playfair-display-v15-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'),
+       url('../fonts/playfair-display-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/playfair-display-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/playfair-display-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/playfair-display-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/playfair-display-v15-latin-regular.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+}
+/* pt-sans-regular - latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pt-sans-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/pt-sans-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pt-sans-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-sans-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pt-sans-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pt-sans-v11-latin-regular.svg#PTSans') format('svg'); /* Legacy iOS */
+}
+/* marck-script-regular - latin */
+@font-face {
+  font-family: 'Marck Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/marck-script-v10-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Marck Script'), local('MarckScript-Regular'),
+       url('../fonts/marck-script-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/marck-script-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/marck-script-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/marck-script-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/marck-script-v10-latin-regular.svg#MarckScript') format('svg'); /* Legacy iOS */
+}
+
+header{
+}
+
+footer{
+  background-color: #e8e8e8;
+}
+
+.wrapper{
+  background-color: #fbebea;
+}
+.top-menu{
+  font-family: PTSans;
+  font-size: 6.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  color: #2d2829;
+}
+
+.top-menu li a{
+  color: #2d2829;
+  text-decoration: none;
+}
+
+.content1{
+  background-image: url(../images/block1/decorTort1.png),
+                    url(../images/block1/decorIcon1.svg),
+url(../images/block1/decorIcon2.svg);
+background-size: 686px 4645px, 28px 28px, 28px 28px;
+background-repeat: no-repeat;
+}
+
+.content1 span{
+width: 130px;
+height: 22px;
+font-family: 'Marck Script';
+font-size: 21px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.9;
+letter-spacing: normal;
+text-align: left;
+color: #32313d;
+}
+.content1 p{
+width: 40px;
+height: 16px;
+font-family: PTSans;
+font-size: 7px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 1.29;
+letter-spacing: normal;
+text-align: left;
+color: #000000;
+}
+.cakesToOrder{
+  width: 177px;
+  height: 64px;
+  font-family: PlayfairDisplay;
+  font-size: 39px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.89;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #2e2829;
+}
+
+.cakeSelection{
+
+}
+
+.cakeSelection h4{
+  width: 71px;
+  height: 9px;
+  font-family: PTSans;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.06;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2d2829;
+}
+
+.cakeSelection span{
+width: 34px;
+height: 9px;
+opacity: 0.7;
+font-family: PTSans;
+font-size: 10px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: 3.68;
+letter-spacing: normal;
+text-align: left;
+color: rgba(45, 40, 41, 0.7);
+}
+
+.ourTorts{
+  width: 127px;
+ height: 18px;
+ font-family: PlayfairDisplay;
+ font-size: 20px;
+ font-weight: bold;
+ font-stretch: normal;
+ font-style: normal;
+ line-height: 1.65;
+ letter-spacing: 0.2px;
+ text-align: left;
+ color: #2d2829;
+}
+
+.individual-order{
+
+}
+
+.filling{
+  background-color: #ffffff;
+}
+
+.filling h6{
+  width: 87px;
+height: 8px;
+font-family: PTSans;
+font-size: 10px;
+font-weight: bold;
+font-stretch: normal;
+font-style: normal;
+line-height: 2.73;
+letter-spacing: 0.1px;
+text-align: left;
+color: #2f2f2f;
+}
+
+.filling h4{
+  width: 67px;
+  height: 28px;
+  font-family: PlayfairDisplay;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: 0.14px;
+  text-align: left;
+  color: #f50049;
+}
+
+.filling h4 span{
+  width: 29px;
+height: 16px;
+font-family: PlayfairDisplay;
+font-size: 29px;
+font-weight: bold;
+font-stretch: normal;
+font-style: normal;
+line-height: 2.63;
+letter-spacing: 0.29px;
+text-align: left;
+color: #f50049;
+}
+
+.sizeTorts{
+  background-color: #ffffff;
+
+}
+
+.decorTort{
+background-color: #ffffff;
+background-image: url(../images/block3/decor.png);
+background-size: 126px 167px;
+background-repeat: no-repeat;
+}
+
+.individual-order__header{
+  width: 236px;
+  height: 20px;
+  font-family: PlayfairDisplay;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #2d2829;
+}
+
+.review{
+  width: 84px;
+  height: 15px;
+  font-family: PlayfairDisplay;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #2d2829;
+}
+
+.order{
+  background-color: #cb4b50;
+}
+
+.headerOrder{
+  width: 127px;
+  height: 15px;
+  font-family: PlayfairDisplay;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.65;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.advantages{
+  width: 207px;
+height: 17.5px;
+font-family: PlayfairDisplay;
+font-size: 20px;
+font-weight: bold;
+font-stretch: normal;
+font-style: normal;
+line-height: 0.83;
+letter-spacing: normal;
+text-align: left;
+color: #2d2829;
+}
