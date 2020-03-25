@@ -19,11 +19,15 @@
     flex-wrap: wrap;
   }
 
+  .footer__column--number {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .footer__column--logo {
-    margin-left: auto;
+    margin: 0 auto 20px;
     order: 2;
-    margin-bottom: 20px;
-    flex: 0 0 30%;
   }
 
   .footer__column--logo svg {
@@ -127,9 +131,10 @@
       padding: 25px 20px 46px;
     }
 
+    .footer__column--number {display: block}
+
     .footer__column--logo {
       order: 3;
-      flex-basis: 33%;
     }
   }
 
